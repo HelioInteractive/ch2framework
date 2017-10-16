@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Helio_Blueprint
+ * @package CH2_Sandbox
  */
 
 ?>
@@ -19,7 +19,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'helio-blueprint' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ch2_sandbox' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -31,7 +31,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'helio-blueprint' ),
+						esc_html__( 'Edit %s', 'ch2_sandbox' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

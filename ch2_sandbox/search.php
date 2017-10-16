@@ -4,19 +4,19 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Helio_Blueprint
+ * @package CH2_Sandbox
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col col-md-8">
+	<section id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'helio-blueprint' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'ch2_sandbox' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php

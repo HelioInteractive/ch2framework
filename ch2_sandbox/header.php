@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Helio_Blueprint
+ * @package CH2_Sandbox
  */
 
 ?><!DOCTYPE html>
@@ -21,12 +21,12 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'helio-blueprint' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ch2_sandbox' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="row">
-				<div class="col col-md-4">
+				<div class="">
 					<div class="site-branding">
 						<?php
 						
@@ -45,9 +45,9 @@
 						endif; ?>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="col col-md-8">
+				<div class="">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'helio-blueprint' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ch2_sandbox' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 				</div>
@@ -56,5 +56,3 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-		<div class="container">
-			<div class="row">

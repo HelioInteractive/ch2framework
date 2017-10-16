@@ -4,12 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Helio_Blueprint
+ * @package CH2_Sandbox
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col col-md-8">
+	<div id="primary" class="content-area ">
 		<main id="main" class="site-main" role="main">
 
 		<?php
