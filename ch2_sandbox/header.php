@@ -21,16 +21,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <?php
 
-    if ((function_exists('is_wpe')) && (is_wpe())) {
-	    echo "this site is on WP Engine";
-    }
-    else {
-	    echo "you're not on WP Engine";
-    }
-
-    ?>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ch2_sandbox' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -66,3 +57,14 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+<?php
+
+if ((function_exists('is_wpe')) && (is_wpe())) {
+	echo "this site is on WP Engine";
+}
+else {
+	echo "you're not on WP Engine";
+}
+
+?>
