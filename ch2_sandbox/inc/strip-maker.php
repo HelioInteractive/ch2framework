@@ -1,8 +1,7 @@
-<?php if (function_exists('is_wpe')):die; else:?>
-
-
+<?php if (!function_exists('is_wpe')):?>
 
 <!doctype html>
+    
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -50,6 +49,8 @@
 </body>
 </html>
 
+
+<?php else: die; ?>
 
 
 
