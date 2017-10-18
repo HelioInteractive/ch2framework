@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package CH2_Sandbox
+ * @package ch2
  */
 
 get_header(); ?>
@@ -26,7 +26,7 @@ get_header(); ?>
 						the_widget( 'WP_Widget_Recent_Posts' );
 
 						// Only show the widget if site has multiple categories.
-						if ( CH2_Sandbox_categorized_blog() ) :
+						if ( ch2_categorized_blog() ) :
 					?>
 
 					<div class="widget widget_categories">

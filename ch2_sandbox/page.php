@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CH2_Sandbox
+ * @package ch2
  */
 
 get_header(); ?>

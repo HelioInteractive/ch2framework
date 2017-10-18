@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package CH2_Sandbox
+ * @package ch2
  */
 
 ?>
@@ -20,7 +20,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php CH2_Sandbox_posted_on(); ?>
+			<?php ch2_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -42,6 +42,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php CH2_Sandbox_entry_footer(); ?>
+		<?php ch2_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

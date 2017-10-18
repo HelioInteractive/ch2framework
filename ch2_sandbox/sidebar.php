@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package CH2_Sandbox
+ * @package ch2
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

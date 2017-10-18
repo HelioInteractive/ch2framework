@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package CH2_Sandbox
+ * @package ch2
  */
 
 get_header(); ?>
