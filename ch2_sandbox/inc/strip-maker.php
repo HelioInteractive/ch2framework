@@ -1,5 +1,5 @@
 <?php
-if (function_exists('is_wpe') ) {
+if ((function_exists('is_wpe'))) {
 	echo "this site is on WP Engine";
 }
 else {
