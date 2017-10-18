@@ -1,7 +1,12 @@
-<?php if (!function_exists('is_wpe')):?>
-
-<!doctype html>
-    
+<?php
+if (function_exists('is_wpe') ) {
+	echo "this site is on WP Engine";
+}
+else {
+	echo "you're not on WP Engine";
+}
+?>
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -48,10 +53,3 @@
 </script>
 </body>
 </html>
-
-
-<?php else: die; ?>
-
-
-
- <?php endif; ?>
