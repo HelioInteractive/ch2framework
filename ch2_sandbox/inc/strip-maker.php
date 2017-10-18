@@ -56,7 +56,6 @@ if (strpos($actual_link, '.dev') !== false) :
 </html>
 
 <?php else:
-    echo 'this is not a local install, make em strips locally and sync wup not down'
-    die;
+    echo 'this is not a local install, make em strips locally and sync wup not down';
 
 endif; ?>
