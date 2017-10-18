@@ -57,14 +57,3 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-<?php
-
-if ((function_exists('is_wpe')) && (is_wpe())) {
-	echo "this site is on WP Engine";
-}
-else {
-	echo "you're not on WP Engine";
-}
-
-?>

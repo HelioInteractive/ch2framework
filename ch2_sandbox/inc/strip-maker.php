@@ -1,12 +1,12 @@
 <?php
-if ((function_exists('is_wpe')) && (is_wpe())) {
-	echo "this site is on WP Engine";
-}
-else {
-	echo "you're not on WP Engine";
-}
+
+
+$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if (strpos($actual_link, '.dev') !== false) :
 ?>
-    <!doctype html>
+
+
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,6 +21,7 @@ else {
 </head>
 
 <body>
+
 
 <h1>Awesome strip maker 2000!!!!</h1>
 <p>use the thingamaginger below to quickly create strips and layouts. then magic will create and prepopulate the needed files for this strip to work.</p>
@@ -53,3 +54,9 @@ else {
 </script>
 </body>
 </html>
+
+<?php else:
+    echo 'this is not a local install, make em strips locally and sync wup not down'
+    die;
+
+endif; ?>
