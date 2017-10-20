@@ -22,14 +22,10 @@ get_header(); ?>
 			if ( have_posts() ):
 				while ( have_posts() ) : the_post();
 
-					if ( 'post' === get_post_type() ) :
-						get_template_part( 'template-parts/type', 'post' );
-					else:
 
 						get_template_part( 'template-parts/layout', 'strips' );
 
 
-					endif;
 
 				endwhile;
 				the_posts_navigation();

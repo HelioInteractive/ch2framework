@@ -172,6 +172,12 @@ function yoasttobottom() {
 
 add_filter( 'wpseo_metabox_prio', 'yoasttobottom' );
 
+//adds an options page to house header and footer options.
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+	acf_add_options_page( 'Global Options' );
+}
+
 
 /**
  * Add an options page to each Custom Post type. This page appears within the custom post type menu in the admin allowing the user to  find it more naturally
