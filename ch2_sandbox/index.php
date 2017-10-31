@@ -22,9 +22,7 @@ get_header(); ?>
 			if ( have_posts() ):
 				while ( have_posts() ) : the_post();
 
-
-						get_template_part( 'template-parts/layout', 'strips' );
-
+						get_template_part( 'template-parts/layout', 'blocks' );
 
 
 				endwhile;
