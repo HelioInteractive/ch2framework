@@ -27,6 +27,15 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php
+$actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if ( strpos( $actual_link, '.dev' ) !== false ) :?>
+  <a style="background: grey; position: fixed; bottom: 0; left: 50%;"href="/wp-content/themes/ch2_sandbox/inc/block-maker.php">Block maker</a>
+
+<?php
+    endif;
+
+?>
 
 </body>
 </html>

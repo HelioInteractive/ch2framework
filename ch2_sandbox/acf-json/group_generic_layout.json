@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_generic_layout",
-            "label": "Generic Layout",
-            "name": "generic_layout",
+            "label": "Blocks",
+            "name": "blocks",
             "type": "flexible_content",
             "value": null,
             "instructions": "",
@@ -19,15 +19,24 @@
             "layouts": {
                 "59e7e17af2dd8": {
                     "key": "59e7e17af2dd8",
-                    "name": "",
-                    "label": "",
+                    "name": "test",
+                    "label": "test",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "59f9f33c77d9e": {
+                    "key": "59f9f33c77d9e",
+                    "name": "testy_test",
+                    "label": "Testy test",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add Block",
             "min": "",
             "max": ""
         }
@@ -38,7 +47,9 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "post"
-            },
+            }
+        ],
+        [
             {
                 "param": "post_type",
                 "operator": "!=",
@@ -54,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1509477550
+    "modified": 1509552974
 }

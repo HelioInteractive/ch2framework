@@ -138,31 +138,6 @@ require get_template_directory() . '/inc/extras.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Page Slug Body Class
- * adds the page post type and slug "type-slug" as a class to the body element, A quick way to target styles that exist on a specific page to prevent collateral damage
- */
-
-function ch2_body_class( $classes ) {
-	global $post;
-	global $wp_query;
-	if ( isset( $post ) ) {
-		$classes[] = $post->post_type . '-' . $post->post_name;
-	}
-
-	if ( $bodyclass = get_field( 'body_class', get_queried_object_id() ) ) {
-
-		$bodyclass = esc_attr( trim( $bodyclass ) );
-
-		$classes[] = $bodyclass;
-
-		return $classes;
-	}
-}
-
-
-add_filter( 'body_class', 'ch2_body_class' );
-
 
 // Move Yoast to bottom of post/page editor
 //need to test if this requires a conditional (though we always use yoast safety is nice to have)
@@ -176,6 +151,37 @@ add_filter( 'wpseo_metabox_prio', 'yoasttobottom' );
 if ( function_exists( 'acf_add_options_page' ) ) {
 
 	acf_add_options_page( 'Global Options' );
+}
+
+
+/**
+ * Body Class stuff
+ */
+
+function add_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+
+	return $classes;
+}
+
+add_filter( 'body_class', 'add_slug_body_class' );
+
+//adds a contents of the bodyclass field to the list of body classes
+
+
+function acf_body_class( $classes ) {
+
+	if ( $bodyclass = get_field( 'body_class', get_queried_object_id() ) ) {
+
+		$bodyclass = esc_attr( trim( $bodyclass ) );
+
+		$classes[] = $bodyclass;
+	}
+
+	return $classes;
 }
 
 

@@ -4,6 +4,7 @@
 $actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if ( strpos( $actual_link, '.dev' ) !== false ) :
 	?>
+
 	<?php function blockMaker( $name, $type ) {
 	$clean_name = cleanName( $name );
 	$fancy_name = fancyName( $name );
@@ -16,17 +17,26 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 		//	makeTemplate();
 		//makeStyle();
 
-
 	endif;
 
 }
 
 
 	function makeblock( $clean_name, $fancy_name ) {
-		$acfName  = 'group_block_' . $clean_name . '.json';
-		$phpName  = 'block_' . $clean_name . '.php';
-		$sassName = '_block_' . $clean_name . '.scss';
+		$acfName    = 'group_block_' . $clean_name . '.json';
+		$phpName    = 'block-' . $clean_name . '.php';
+		$sassName   = '_block-' . $clean_name . '.scss';
+		$layoutName = $clean_name;
+		echo '<br><br>';
+		echo 'Copy the text below and use as the layout name in the flexible layout repeater';
+		echo '<br><br>';
+		echo 'Label: ' .$fancy_name;
+		echo '<br><br>';
+		echo 'Name: '. $layoutName;
 
+		?>
+
+		<?php
 		//make php file
 		$handle = fopen( '../template-parts/' . $phpName, 'w' ) or die( 'Cannot open file:  ' . $phpName );
 		$data = '
@@ -45,14 +55,12 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 		fwrite( $handle, $data );
 
 
+		$handle = fopen( '../acf-json/' . $acfName, 'w' ) or die( 'Cannot open file:  ' . $acfName );
+		$data =
 
-
-			$handle = fopen('../acf-json/'.$acfName, 'w') or die('Cannot open file:  '.$acfName);
-			$data =
-
-                '{
+			'{
     "key": "group_block_' . $clean_name . '",
-    "title": "Block - '.$fancy_name.'",
+    "title": "Block - ' . $fancy_name . '",
     "fields": false,
     "location": [
         [
@@ -76,16 +84,16 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": '.time().'
+    "modified": ' . time() . '
 }
                 
                 ';
-			fwrite($handle, $data);
+		fwrite( $handle, $data );
 
 
-			$handle = fopen('../assets/sass/blocks/'.$sassName, 'w') or die('Cannot open file:  '.$sassName);
-			$data =
-                '.block.'.$clean_name . ' {
+		$handle = fopen( '../assets/sass/blocks/' . $sassName, 'w' ) or die( 'Cannot open file:  ' . $sassName );
+		$data =
+			'.block.' . $clean_name . ' {
   .outer-block-wrapper {
 	@extend .container
   }
@@ -100,8 +108,15 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
   
 }
 			';
-		fwrite($handle, $data);
+		fwrite( $handle, $data );
 
+		$sassImport = '/*--------------------------------------------------------------
+# ' . $fancy_name . '
+--------------------------------------------------------------*/
+@import "block-' . $clean_name . '";
+
+';
+		file_put_contents( '../assets/sass/blocks/_blocks.scss', $sassImport, FILE_APPEND );
 
 	}
 
@@ -143,6 +158,7 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
     <!doctype html>
     <html lang="en">
     <head>
+
         <meta charset="utf-8">
 
         <title>block maker</title>
@@ -162,7 +178,8 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 
 
     <h1>Awesome block maker 2000!!!!</h1>
-    <p>Use the thingamaginger below to quickly create blocks and layouts. THEN magic will create and pre-populate the
+    <p>Use the thingamaginger below to quickly create blocks (no layouts yet). THEN magic will create and pre-populate
+        the
         needed files for this block to work. This WILL overwrite the file if it exists. Wield RESPONSIBLY</p>
 
 
