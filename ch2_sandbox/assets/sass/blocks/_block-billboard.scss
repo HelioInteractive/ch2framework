@@ -1,0 +1,15 @@
+.block.billboard {
+  .outer-block-wrapper {
+	@extend .container
+  }
+  .inner-block-wrapper {
+	@extend .row;
+  }
+  /*content here*/
+  
+  
+  
+  
+  
+}
+			

@@ -15,6 +15,86 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/acf-json\/group_block_billboard.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_billboard-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_call_to_action.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_call_to_action-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_general_copy.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_general_copy-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_image_slider.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_image_slider-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_logo_block.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_logo_block-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_text_and_icons.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_text_and_icons-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_text_and_table.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_text_and_table-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_two_column_text_and_photo_blocks.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_two_column_text_and_photo_blocks-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_block_two_columns.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_block_two_columns-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_generic_layout.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_generic_layout-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/acf-json\/index.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -61,6 +141,17 @@
 		"oAP": "\/assets\/fonts\/glyphicons-halflings-regular.woff2",
 		"oF": 0
 		},
+	"\/assets\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 6074,
+		"oA": 0,
+		"oAP": "\/assets\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/js\/customizer.js": {
 		"ft": 64,
 		"mi": 1,
@@ -87,6 +178,19 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/assets\/sass\/_client_reboot.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/_client_reboot.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/assets\/sass\/_grid.scss": {
 		"aP": 0,
@@ -123,6 +227,136 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/_reboot.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-billboard.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-billboard.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-call_to_action.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-call_to_action.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-general_copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-general_copy.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-image_slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-image_slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-logo_block.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-logo_block.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-text_and_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-text_and_icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-text_and_table.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-text_and_table.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-two_column_text_and_photo_blocks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-two_column_text_and_photo_blocks.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_block-two_columns.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_block-two_columns.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/blocks\/_blocks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/blocks\/_blocks.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -531,6 +765,12 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/block-maker.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/block-maker.php",
+		"oF": 0
+		},
 	"\/inc\/customizer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -571,12 +811,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
-		"oF": 0
-		},
-	"\/page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -636,12 +870,6 @@
 		"oAP": "\/sidebar.php",
 		"oF": 0
 		},
-	"\/single.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/single.php",
-		"oF": 0
-		},
 	"\/style.css": {
 		"aP": 0,
 		"bl": 0,
@@ -651,6 +879,60 @@
 		"oAP": "\/style-min.css",
 		"oF": 1,
 		"oS": 3
+		},
+	"\/template-parts\/block-billboard.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-billboard.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-call_to_action.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-call_to_action.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-general_copy.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-general_copy.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-image_slider.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-image_slider.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-logo_block.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-logo_block.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-text_and_icons.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-text_and_icons.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-text_and_table.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-text_and_table.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-two_column_text_and_photo_blocks.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-two_column_text_and_photo_blocks.php",
+		"oF": 0
+		},
+	"\/template-parts\/block-two_columns.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/block-two_columns.php",
+		"oF": 0
 		},
 	"\/template-parts\/content-none.php": {
 		"ft": 8192,
@@ -674,6 +956,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content.php",
+		"oF": 0
+		},
+	"\/template-parts\/layout-blocks.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/layout-blocks.php",
+		"oF": 0
+		},
+	"\/unused_page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/unused_page.php",
+		"oF": 0
+		},
+	"\/unused_single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/unused_single.php",
 		"oF": 0
 		}
 	},
