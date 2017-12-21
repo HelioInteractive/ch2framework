@@ -1,0 +1,100 @@
+{
+    "key": "group_block_form",
+    "title": "Block - Form",
+    "fields": [
+        {
+            "key": "field_5a01d3a068d0b",
+            "label": "Default background (optional)",
+            "name": "default_background",
+            "type": "select",
+            "instructions": "By default, before any styles, accent colors or backgrounds are applied all blocks are either light grey or white. This can be very useful by making multiple blocks visually act as one by assigning them the same background style.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "White",
+                "2": "Light grey"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a01d3ec68d0c",
+            "label": "Accent color",
+            "name": "accent_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "green": "green",
+                "orange": "orange",
+                "purple": "purple",
+                "yellow": "yellow"
+            },
+            "default_value": [
+                "orange"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a01c15e2bcc1",
+            "label": "Select form",
+            "name": "select_form",
+            "type": "forms",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "post_object",
+            "allow_null": 0,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "acftc-group-0",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1510337629
+}

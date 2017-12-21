@@ -1,0 +1,103 @@
+// Rem output with px fallback
+
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+
+	@media screen and (max-width: $bp_phone) {
+		font-size: ($sizeValue * 14) * 1px;
+		font-size: $sizeValue * .875rem;
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/*
+Extends a divs background to fill the viewport on both sides,
+only ONE color is needed, additional arguments allow to specify left and right "bar" colors
+Remember html and body element should have overflow-x hidden to prevent scrollbars.
+
+color 1 will determine ALL the colors, color 2 overrides outside colors, color 3 overrides right side one.
+*/
+
+@mixin wide-background-color($color1, $color2:$color1, $color3:$color2) {
+	background-color: $color1;
+	position: relative;
+	&:before, &:after {
+		z-index: 0;
+		content: '';
+		position: absolute;
+		background-color: $color2;
+		top: 0;
+		bottom: 0;
+		left: -999%;
+		right: 100%;
+	}
+	&:after {
+		background-color: $color3;
+		left: 100%;
+		right: -999%;
+	}
+}
+
+@mixin button($color) {
+	border-radius: .5em;
+
+	background-color: $color;
+	color: white;
+	padding: .4em 1.2em;
+	font-size: .8em;
+	text-decoration: none;
+	transition: all .6666s;
+	&:hover {
+		text-decoration: none;
+		background-color: lighten($color, 7.5%);
+
+	}
+}
+
+@mixin button-alt($color) {
+
+	border-radius: .5em;
+	background-color: white;
+	color: $color;
+	padding: calc(.4em - 2px) calc(1.2em - 2px);
+	border: 2px solid white;
+	font-size: .8em;
+	text-decoration: none;
+
+	transition: all .6666s;
+	&:hover {
+
+		padding: calc(.4em - 2px) calc(1.2em - 2px);
+		text-decoration: none;
+		background-color: $color;
+		color: white;
+		border: 2px solid white;
+	}
+}
+
+/*
+This mixin helps with fonts that could potentially get TOO small while scaling off of the general design.
+ */
+@mixin smallFont($fullSize) {
+	font-size: calc(12px + (#{$fullSize} - 12) * (100vw - 350px) / (1300 - 350));
+}
+

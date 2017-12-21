@@ -1,0 +1,32 @@
+/*
+Use this file primarily for DEFAULT posts and pages or for relatively GLOBAL styles i.e if the styles for archives will apply for multiple post types or are styles that will work for most pages. that being said, most global styles should be going on a client specific "base styles file"
+*/
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

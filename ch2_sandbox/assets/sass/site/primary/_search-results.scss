@@ -1,0 +1,32 @@
+/*
+Search
+*/
+
+.search-results {
+	.site-content {
+		padding: 4.125rem .75rem 6.125rem;
+	}
+	.outer-wrapper {
+		@extend .container
+	}
+	.inner-wrapper {
+		@extend .row;
+	}
+	.content-wrapper {
+		@extend .col-md-12;
+	}
+	h1.page-title {
+		font-size: 2.4rem;
+		text-align: center;
+		font-weight: 400;
+		color: $color__grey;
+	}
+	h2.entry-title a {
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: $color__orange;
+	}
+	.entry-footer {
+		background: $color__light-grey;
+	}
+}

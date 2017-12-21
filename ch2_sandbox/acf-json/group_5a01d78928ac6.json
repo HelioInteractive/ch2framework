@@ -1,0 +1,55 @@
+{
+    "key": "group_5a01d78928ac6",
+    "title": "Option - Default Background",
+    "fields": [
+        {
+            "key": "field_5a01d797753f9",
+            "label": "Default background (optional)",
+            "name": "default_background",
+            "type": "select",
+            "value": null,
+            "instructions": "By default, before any styles, accent colors or backgrounds are applied all blocks are either light grey or white. This can be very useful by making multiple blocks visually act as one by assigning them the same background style.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "White",
+                "2": "Light grey"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1510070195
+}

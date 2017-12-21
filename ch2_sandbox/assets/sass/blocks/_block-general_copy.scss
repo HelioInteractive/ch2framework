@@ -1,0 +1,27 @@
+.block.general_copy {
+  .outer-block-wrapper {
+	@extend .container
+  }
+  .inner-block-wrapper {
+	@extend .row;
+  }
+  /*content here*/
+  
+  &.default-1,
+  &.default-2 {
+	  &.accent-green h3 {
+		color: $color__green;
+	  }
+	  &.accent-purple h3 {
+		color: $color__purple;
+	  }
+	  &.accent-yellow h3 {
+		color: $color__yellow;
+	  }
+  }
+  
+  
+  .content {
+	@extend .col-md-12;
+  }
+}

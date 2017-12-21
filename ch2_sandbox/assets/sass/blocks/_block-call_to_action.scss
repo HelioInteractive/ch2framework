@@ -1,0 +1,74 @@
+.block.call_to_action {
+	&.style-1 {
+		&.accent-green {
+			$accent: $color__green;
+			background-color: $accent;
+			color: white;
+			.call_to_action--title {
+				color: white;
+			}
+			.button {
+				@include button-alt($accent);
+			}
+		}
+		&.accent-orange {
+			$accent: $color__orange;
+			background-color: $accent;
+			color: white;
+			.call_to_action--title {
+				color: white;
+			}
+			.button {
+				@include button-alt($accent);
+			}
+		}
+		&.accent-purple {
+			$accent: $color__purple;
+			background-color: $accent;
+			color: white;
+			.call_to_action--title {
+				color: white;
+			}
+			.button {
+				@include button-alt($accent);
+			}
+		}
+		&.accent-yellow {
+			$accent: $color__yellow;
+			background-color: $accent;
+			color: white;
+			.call_to_action--title {
+				color: white;
+			}
+			.button {
+				@include button-alt($accent);
+			}
+		}
+	}
+	.outer-block-wrapper {
+		@extend .container
+	}
+	.inner-block-wrapper {
+		@extend .row;
+		text-align: center;
+		h3 {
+			color: $color__grey;
+			font-weight: 700;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+	/*content here*/
+	.call_to_action--content {
+		@extend .col-md-12;
+		@media (min-width: $bp_phone) {
+			width: 85%;
+		}
+		margin: 0 auto;
+		float: none;
+	}
+
+	//style 1 Color block, white button
+	//style 2 Plain block, Color button
+}
+			

@@ -1,0 +1,143 @@
+.post-type-archive-team_member {
+	.site-content {
+		background-color: white;
+	}
+
+	.outer-block-wrapper {
+		@extend .container;
+	}
+	.inner-block-wrapper {
+		@extend .row;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.general_copy .content {
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	.group-list {
+		margin: 0 0 .6rem;
+		padding: 0 $gutter*.5;
+		width: 100%;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		@media (max-width: $bp_phone) {
+			flex-direction: column;
+		}
+		li, a {
+			padding: .25em;
+			text-transform: uppercase;
+			font-size: .6rem;
+			//	letter-spacing: -.5px;
+			@include smallFont(15);
+		}
+	}
+	.group {
+		@extend .col-md-12
+	}
+	.group-title, .store-title {
+		font-size: 1.5rem;
+		display: block;
+	}
+	.members {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+	.member {
+		margin-bottom: 2.8rem;
+		width: 100%;
+		@media (min-width: 800px) {
+			width: calc(50% - (0.5 * #{$gutter}));
+		}
+		.member-photo, .member-photo img {
+			display: block;
+			margin: 0 auto;
+		}
+		.member-photo {
+			margin-bottom: 1.8rem;
+		}
+		.name {
+			color: $color__orange;
+			font-size: 1.3rem;
+		}
+		.role {
+			color: $color__grey;
+			font-size: .92rem;
+			margin-bottom: .25em;
+		}
+		.bio {
+			font-size: .8rem;
+			@media (max-width: $bp-phone) {
+				font-size: .9rem;
+			}
+			p:last-child {
+				margin-bottom: .5em;
+			}
+		}
+		.email {
+			text-transform: uppercase;
+			font-size: .8rem;
+		}
+
+	}
+
+	.blurb-title {
+		font-size: 2.4rem;
+	}
+	.content p {
+		font-size: .92rem;
+	}
+
+	.group-title {
+		font-size: 1.6rem;
+		margin-bottom: 1.1em;
+	}
+	.board {
+		padding-bottom: 6rem;
+		width: 100%;
+		//	display: flex;
+		//	flex-direction: column;
+		@media (min-width: $bp_tablet) {
+			//	flex-direction: row;
+			//	justify-content: space-between;
+			//	flex-wrap: wrap;
+			columns: 2 $gutter;
+		}
+	}
+	.bod {
+		margin-bottom: .5em;
+		display: block;
+		width: 100%;
+
+		@media (min-width: $bp_tablet) {
+			//	width: calc(50% - (.5 * #{$gutter}));
+
+			overflow: hidden; /* Fix for firefox and IE 10-11  */
+			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+			page-break-inside: avoid; /* Firefox */
+			break-inside: avoid; /* IE 10+ */
+			break-inside: avoid-column;
+		}
+		.board-member, .bod-divider, .role {
+			font-size: 1.3rem;
+		}
+		.board-member, .bod-divider {
+			color: $color__orange;
+		}
+
+		.role {
+			color: $color__grey
+		}
+		.organization {
+			color: $color__grey;
+			display: block;
+		}
+	}
+}

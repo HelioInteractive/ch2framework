@@ -1,0 +1,50 @@
+.block.logo_block {
+	//leo: this seems liek a TON of padding, i could be wrong. either way lets set the block padding once in the blocks globalss area
+	text-align: center;
+	.outer-block-wrapper {
+		@extend .container
+	}
+	.inner-block-wrapper {
+		@extend .row;
+	}
+	/*content here*/
+	.logo_block--content {
+		@extend .col-md-12;
+	}
+	//typography
+	.copy {
+		width: 85%;
+		//leo: why 85 in particular, just curious.
+		margin: 0 auto;
+	}
+	h3 {
+		color: $color__grey;
+	}
+	.logos-wrapper {
+		width: 100%;
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+
+		.image-wrapper {
+			width: 25%;
+			padding: 2.75rem .5*$gutter;
+			padding: .5*$gutter;
+		}
+
+	}
+	.num-1, .num-2, .num-3 {
+		.image-wrapper {
+			width: 33.3333333%;
+		}
+
+	}
+	@media (max-width: $bp_phone) {
+		.image-wrapper {
+			width: 50% !important;
+		}
+	}
+}

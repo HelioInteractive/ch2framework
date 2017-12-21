@@ -1,0 +1,29 @@
+.block.default-1, .block {
+	background: white;
+}
+
+.block.default-2 {
+	background: $color__light-grey;
+}
+
+//todo turn this back on in production.
+.js .block {
+	//	opacity: 0;
+}
+
+.block {
+	padding: 3rem 0 4rem;
+	@extend .clearfix;
+}
+
+.grid-on .block {
+
+	border-bottom: 1px dashed $color__grey-trans;
+}
+
+.block .outer-block-wrapper .inner-block-wrapper {
+	&:before, &:after {
+		display: none;
+	}
+}
+

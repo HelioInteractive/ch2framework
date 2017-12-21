@@ -1,0 +1,195 @@
+.block.three_circles {
+
+	&.style-1 {
+		//Accent color background, white elements
+		.three_circles--title {
+			color: white;
+		}
+		.single-circle-wrapper {
+			p {
+
+				color: black;
+				font-size: 1rem;
+				font-weight: bold;
+
+			}
+
+		}
+		.circle-link:hover p {
+			color: white;
+		}
+		.copy {
+			color: white;
+			font-weight: bold;
+			text-shadow: 0 0 50px rgba(0, 0, 0, .33);
+		}
+		&.accent-orange {
+			background-color: $color__orange;
+			.button {
+				@include button-alt($color__orange)
+			}
+		}
+		&.accent-purple {
+			background-color: $color__purple;
+			.button {
+				@include button-alt($color__purple)
+			}
+		}
+		&.accent-yellow {
+			background-color: $color__yellow;
+			.button {
+				@include button-alt($color__yellow)
+			}
+		}
+		&.accent-green {
+			background-color: lighten($color__green, 10%);
+			.button {
+				@include button-alt(lighten($color__green, 10%))
+			}
+		}
+		.button.button.button {
+			color: black;
+			border-color: white;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	&.style-2 {
+		//Plain background, accent color elements
+		&.accent-purple {
+			$accent: $color__purple;
+			.three_circles--title {
+				color: $accent;
+			}
+			.circle-link:hover p {
+				color: $accent;
+			}
+			.button {
+				@include button($accent);
+			}
+		}
+		&.accent-purple {
+			$accent: $color__purple;
+			.three_circles--title {
+				color: $accent;
+			}
+			.circle-link:hover p {
+				color: $accent;
+			}
+			.button {
+				@include button($accent);
+			}
+		}
+		&.accent-green {
+			$accent: $color__green;
+			.three_circles--title {
+				color: $accent;
+			}
+			.circle-link:hover p {
+				color: $accent;
+			}
+			.button {
+				@include button($accent);
+			}
+		}
+		&.accent-yellow {
+			$accent: $color__yellow;
+			.three_circles--title {
+				color: $accent;
+			}
+			.circle-link:hover p {
+				color: $accent;
+			}
+			.button {
+				@include button($accent);
+			}
+		}
+		&.accent-orange {
+			$accent: $color__orange;
+			.three_circles--title {
+				color: $accent;
+			}
+			.circle-link:hover p {
+				color: $accent;
+			}
+			.button {
+				@include button($accent);
+			}
+		}
+
+	}
+
+	.outer-block-wrapper {
+		@extend .container
+	}
+	.inner-block-wrapper {
+		@extend .row;
+	}
+	/*content here*/
+	.three_circles--content {
+		@extend .col-md-12;
+		text-align: center;
+	}
+	.three_circles--title {
+		font-size: 3.2rem;
+		font-weight: bold;
+		margin-bottom: 2.75rem;
+	}
+	h2 {
+		text-align: center;
+	}
+	img {
+		border-radius: 50%;
+		margin-bottom: 1.6rem;
+	}
+	.circles-wrapper {
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -0.5 * $gutter;
+		$halfgutter: $gutter * 0.5;
+		width: calc(100% + #{$gutter});
+		.single-circle-wrapper {
+			width: calc(100% / 3);
+			width: calc(33.33333333%);
+			padding: 0 $halfgutter 2.75rem;
+			text-align: center;
+			@media (max-width: $bp_phone) {
+				width: calc(60%);
+				margin: 0 auto;
+			}
+		}
+		.label {
+			@media (max-width: 800px) {
+				font-size: 18px;
+			}
+		}
+	}
+	.circle-link:hover img {
+		box-shadow: 0 0 10px 0 rgba(125, 125, 125, .5);
+	}
+	&.accent-orange,
+	&.accent-purple {
+		.circle-link:hover img {
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+		}
+	}
+	.copy {
+		text-align: center;
+		max-width: 650px;
+		margin: 0 auto 1.6rem;
+		display: block;
+		font-size: .8rem;
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.button {
+		text-align: center;
+		width: auto;
+	}
+}
+			

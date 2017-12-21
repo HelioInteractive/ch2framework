@@ -1,0 +1,76 @@
+.block.two_columns {
+	.outer-block-wrapper {
+		@extend .container
+	}
+	.inner-block-wrapper {
+		@extend .row;
+	}
+	/*content here*/
+	.two_columns--content {
+		@extend .col-md-12;
+		.col:nth-last-child(2) {
+			padding-left: 0;
+		}
+	}
+	h2 {
+		padding-bottom: 2.75rem;
+		@media (max-width: $bp_phone) {
+			text-align: center;
+		}
+	}
+	h3 {
+		margin-top: -15px;
+	}
+	&.accent-green h3 {
+		color: $color__green;
+	}
+	&.accent-orange h3 {
+		color: $color__orange;
+	}
+	&.accent-purple h3 {
+		color: $color__purple;
+	}
+	&.accent-yellow h3 {
+		color: $color__yellow;
+	}
+	ul, ol {
+		margin: 0 0 1.5rem -.5rem;
+	}
+	.col {
+		padding-right: 1.75rem;
+	}
+	.col:last-child {
+		padding-right: 0;
+		padding-left: 1.75rem;
+	}
+
+	@media (max-width: $bp_phone) {
+		.col {
+			padding-right: 0;
+		}
+		.col:last-child {
+			padding-top: 3rem;
+			padding-left: 0;
+		}
+		.col.image {
+			text-align: center;
+		}
+		h3, p {
+			text-align: center;
+		}
+		img {
+			margin: 0 auto;
+		}
+	}
+
+}
+
+.two_columns.default-1 + .two_columns.default-1 {
+	padding-top: 0;
+	margin-top: -1.5rem;
+}
+
+.two_columns.default-2 + .two_columns.default-2 {
+	padding-top: 0;
+	margin-top: -1.5rem;
+}

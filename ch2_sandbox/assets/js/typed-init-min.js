@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){Typed.new(".change-text",{strings:["STRATEGIC","CREATIVE","BRILLIANT","EFFICIENT"],typeSpeed:50,backDelay:1e3,loop:!0})});

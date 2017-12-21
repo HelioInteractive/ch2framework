@@ -1,0 +1,239 @@
+.block.billboard {
+	padding: 0;
+	background-size: cover;
+	position: relative;
+	min-height: 500px;
+	height: calc(100vh - 6.3rem);
+	max-height: 1000px;
+	@media (max-width: $bp_phone) {
+		min-height: 500px;
+	}
+	.outer-block-wrapper {
+		@extend .container;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.inner-block-wrapper {
+		@extend .row;
+		height: 100%;
+		text-align: center;
+
+		//ヾ(＾∇＾): Are these margins needed?  maybe you just dont need to extend row at all if you are not using bstrp columns within it.
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*content here*/
+	.billboard--title {
+		color: $color__white;
+		font-weight: 700;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+	}
+	p {
+		color: $color__white;
+	}
+	.billboard--content {
+		@extend .col-md-12;
+		@media (min-width: $bp_phone) {
+			width: 85%;
+		}
+		margin: 0 auto;
+		padding: 1.25rem 0 1.4rem;
+		//test
+	}
+
+	&.style-1 {
+		.copy {
+			font-size: .9em;
+		}
+	}
+
+	&.style-1,
+	&.style-2 {
+
+		.billboard--title {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h3 {
+				text-shadow: 0 0 10px rgba(0, 0, 0, .25);
+			}
+
+		}
+		&.accent-green .button {
+			@include button-alt($color__green);
+		}
+		&.accent-orange .button {
+			@include button-alt($color__orange);
+		}
+
+		&.accent-yellow .button {
+			@include button-alt($color__yellow);
+		}
+
+		&.accent-purple .button {
+			@include button-alt($color__purple);
+		}
+	}
+
+	&.style-2 {
+		.inner-block-wrapper {
+			justify-content: center;
+		}
+	}
+	&.style-1.accent-green .billboard--content,
+	&.style-2.accent-green .billboard--content {
+		@include wide-background-color($color__green-trans);
+	}
+	&.style-1.accent-yellow .billboard--content,
+	&.style-2.accent-yellow .billboard--content {
+		@include wide-background-color($color__yellow-trans);
+	}
+	&.style-1.accent-purple .billboard--content,
+	&.style-2.accent-purple .billboard--content {
+		@include wide-background-color($color__purple-trans);
+	}
+	&.style-1.accent-orange .billboard--content,
+	&.style-2.accent-orange .billboard--content {
+		@include wide-background-color($color__orange-trans);
+	}
+	&.style-2 .button {
+		@include button-alt($color__white);
+		color: $color__grey;
+		&:hover {
+			color: $color__white;
+			background-color: $color__grey;
+			border: 1px solid $color__grey;
+		}
+	}
+
+	&.style-3 {
+		position: relative;
+		.filter {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+			background: rgba(0, 0, 0, .33);
+
+		}
+		.billboard--title {
+
+			font-size: 1.6rem;
+		}
+		text-shadow: 0 0 75px rgba(0, 0, 0, .5);
+		.inner-block-wrapper {
+			justify-content: center;
+		}
+		.copy {
+			padding-bottom: .5em;
+			font-weight: bold;
+		}
+		.button.button {
+		}
+		&.accent-green .button {
+			@include button-alt($color__green);
+		}
+		&.accent-yellow .button {
+			@include button-alt($color__yellow);
+		}
+		&.accent-purple .button {
+			@include button-alt($color__purple);
+		}
+		&.accent-orange .button {
+			@include button-alt($color__orange);
+		}
+		.button:hover {
+			border: none !important;
+			padding: calc(.3em + 2px) calc(2px + 1.2em) !important;
+
+		}
+	}
+
+}
+
+.billboard.style-1.accent-green .button {
+	@include button-alt($color__green);
+}
+
+.typed-cursor {
+	opacity: 1;
+	animation: typedjsBlink 0.7s infinite;
+	-webkit-animation: typedjsBlink 0.7s infinite;
+	animation: typedjsBlink 0.7s infinite;
+	color: white;
+	font-weight: normal;
+}
+
+@keyframes typedjsBlink {
+	50% {
+		opacity: 0.0;
+	}
+}
+
+@-webkit-keyframes typedjsBlink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.typed-fade-out {
+	opacity: 0;
+	transition: opacity .5s;
+	-webkit-animation: 0;
+	animation: 0;
+}
+
+.billboard--title h3 {
+	font-size: 3rem;
+	color: white;
+	line-height: 1.1;
+	font-weight: bold;
+	.text-wrap {
+		border-bottom: solid .2rem white;
+		display: inline;
+	}
+}
+
+.rotating .billboard--title h3 {
+	font-size: 2.6rem;
+}
+
+.accent-green .text-wrap {
+	color: $color__green;
+}
+
+.accent-orange .text-wrap {
+	color: $color__orange;
+}
+
+.accent-yellow .text-wrap {
+	color: $color__yellow;
+}
+
+.accent-purple .text-wrap {
+	color: $color__purple;
+}
+
+.legend {
+	color: white;
+}

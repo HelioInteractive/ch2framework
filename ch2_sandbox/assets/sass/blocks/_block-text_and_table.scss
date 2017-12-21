@@ -1,0 +1,57 @@
+.block.text_and_table {
+	&.accent-green {
+		h3, th {
+			color: $color__green;
+		}
+	}
+	&.accent-orange {
+		h3, th {
+			color: $color__orange;
+		}
+	}
+	&.accent-purple {
+		h3, th {
+			color: $color__purple;
+		}
+	}
+	&.accent-yellow {
+		h3, th {
+			color: $color__yellow;
+		}
+	}
+	.outer-block-wrapper {
+		@extend .container
+	}
+	.inner-block-wrapper {
+		@extend .row;
+	}
+	/*content here*/
+	.text_and_table--content .intro {
+		@extend .col-md-12;
+	}
+	table {
+		margin: 2.75rem 0 1.5em;
+	}
+
+	@media (max-width: $bp_phone) {
+		.table-wrapper {
+			overflow-x: scroll;
+		}
+		th:first-child,
+		th,
+		td:first-child,
+		td {
+			min-width: 150px;
+		}
+	}
+	@media (max-width: $bp_tablet) {
+		th {
+			font-size: .85rem;
+			padding-left: 15px;
+		}
+		td, tr {
+			font-size: .8rem;
+			padding: 15px;
+		}
+	}
+}

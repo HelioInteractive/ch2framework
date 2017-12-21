@@ -1,0 +1,83 @@
+.block.text_and_icons {
+	&.accent-green h3 {
+		color: $color__green;
+	}
+	&.accent-orange h3 {
+		color: $color__orange;
+	}
+	&.accent-purple h3 {
+		color: $color__purple;
+	}
+	&.accent-yellow h3 {
+		color: $color__yellow;
+	}
+  .outer-block-wrapper {
+	@extend .container
+  }
+  .inner-block-wrapper {
+	@extend .row;
+  }
+  /*content here*/
+  .text_and_icons--content {
+	  @extend .col-md-12;
+	  @media (max-width: 450px) {
+		text-align: center;
+	  }
+  }
+  
+  .icons-wrapper {
+	  @extend .col-md-12;
+	  display: -webkit-flex;
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  margin: 2.5rem -0.5 * $gutter 0;
+	  $halfgutter: $gutter * 0.5;
+	  width: calc(100% + #{$gutter});
+	  .icons-text-wrapper {
+		  width: 22.5%;
+		  text-align: center;
+		  @media (max-width: $bp_tablet) {
+			width: 45%;
+			padding-bottom: 2.5rem;
+		  }
+		  @media (max-width: $bp_phone) {
+			width: 60%;
+			margin: 0 auto;
+		  }
+		  img {
+			  border-radius: 50%;
+		  }
+		  p {
+			  padding-top: 1.25rem;
+			  margin-bottom: .5rem;
+			  font-size: .8rem;
+			  color: $color__black;
+			  font-weight: 700;
+			  @media (max-width: $bp_tablet) {
+				font-size: 1rem;
+			  }
+			  @media (max-width: $bp_phone) {
+				font-size: 1.2rem;
+			  }
+		  }
+		  p.small {
+			  padding-top: 0;
+			  font-size: .675rem;
+			  font-weight: 400;
+			  color: $color__grey;
+			  @media (max-width: $bp_tablet) {
+				font-size: .8rem;
+			  }
+			  @media (max-width: $bp_phone) {
+				font-size: 1rem;
+			  }
+		  }
+	  }
+  }
+  
+  
+  
+}
+			
