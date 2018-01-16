@@ -47,9 +47,6 @@ if ( ! function_exists( 'ch2_setup' ) ) :
 			'menu-1' => esc_html__( 'Main menu', 'ch2' ),
 		) );
 		register_nav_menus( array(
-			'menu-2' => esc_html__( 'Quick links', 'ch2' ),
-		) );
-		register_nav_menus( array(
 			'menu-3' => esc_html__( 'Footer', 'ch2' ),
 		) );
 
@@ -73,13 +70,13 @@ add_action( 'after_setup_theme', 'ch2_sandbox_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
- *
+ * Important as it determines width of oembeds and responsiveness of images.
  * Priority 0 to make it available to lower priority callbacks.
  *
  * @global int $content_width
  */
 function ch2_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'ch2_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'ch2_content_width',800 );
 }
 
 add_action( 'after_setup_theme', 'ch2_content_width', 0 );
@@ -100,6 +97,15 @@ function ch2_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+function devTime(){
+	$actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	if ( preg_match("/(.local|.staging|.wpengine|wpengine')/", $actual_link)) :
+		return true;
+	else:
+		return false;
+	endif;
+}
+
 
 add_action( 'widgets_init', 'ch2_widgets_init' );
 
@@ -113,34 +119,45 @@ function ch2_scripts() {
 	//Swap these for Live
 	//wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css' );
 //the next two lines update the stylesheet version with the time of day, forcing the browser to fetch it fresh.
-	$cache_bust = '?' . filemtime( get_stylesheet_directory() . '/assets/sass/style.css' );
+	//$cache_bust = '?' . filemtime( get_stylesheet_directory() . '/assets/sass/style.css' );
 
-	wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css' . $cache_bust );
+
+	if (devTime()) :
+		$cache_bust =  filemtime( get_stylesheet_directory() . '/assets/sass/style.css' );
+	else:
+		$cache_bust = '1';
+	endif;
+
+	wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css', array(), $cache_bust );
 
 
 	wp_enqueue_script( 'ch2-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170303', true );
 
-	wp_enqueue_script( 'fade-in-blocks', get_template_directory_uri() . '/assets/js/fade-in-blocks-min.js', array( 'jquery' ), '1', false );
+	wp_enqueue_script( 'fade-in-blocks', get_template_directory_uri() . '/assets/js/ch2-fancy-min.js', array( 'jquery' ), '1', false );
 
 	wp_enqueue_script( 'ch2-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20170303', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	wp_enqueue_script( 'debug-grid', get_template_directory_uri() . '/assets/js/grid-debug-min.js', array( 'jquery' ) );
+
+	if (devTime()) :
+		wp_enqueue_script( 'debug-grid', get_template_directory_uri() . '/assets/js/ch2-debug-min.js', array( 'jquery' ) );
+	endif;
+
 }
 
 add_action( 'wp_enqueue_scripts', 'ch2_scripts' );
 
 function google_fonts() {
 	$query_args = array(
-		'family' => 'Muli:400,700',
-		'subset' => 'latin,latin-ext'
+		//'family' => 'Muli:400,700',
+	//	'subset' => 'latin,latin-ext'
 	);
-	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+	//wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 }
 
-add_action( 'wp_enqueue_scripts', 'google_fonts' );
+//add_action( 'wp_enqueue_scripts', 'google_fonts' );
 
 /**
  * Custom template tags for this theme.
