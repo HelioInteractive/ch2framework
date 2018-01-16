@@ -124,12 +124,12 @@ function ch2_scripts() {
 
 	if (devTime()) :
 		$cache_bust =  filemtime( get_stylesheet_directory() . '/assets/sass/style.css' );
+		wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css', array(), $cache_bust );
+
 	else:
-		$cache_bust = '1';
+		wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css');
+
 	endif;
-
-	wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css', array(), $cache_bust );
-
 
 	wp_enqueue_script( 'ch2-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170303', true );
 
@@ -369,12 +369,13 @@ add_filter( 'menu_order', 'custom_menu_order' );
 function ch2_remove_posts_menu_item() {
 
 	/* remove the sub menu item */
+	/* this removes blog stuff */
 	remove_menu_page(
 		'edit.php' // parent slug
 	);
 }
 
-add_action( 'admin_menu', 'ch2_remove_posts_menu_item' );
+//add_action( 'admin_menu', 'ch2_remove_posts_menu_item' );
 
 /*
  * Disable all comment functionality
@@ -391,15 +392,10 @@ function df_disable_comments_post_types_support() {
 	}
 }
 
-add_action( 'admin_init', 'df_disable_comments_post_types_support' );
-
 // Close comments on the front-end
 function df_disable_comments_status() {
 	return false;
 }
-
-add_filter( 'comments_open', 'df_disable_comments_status', 20, 2 );
-add_filter( 'pings_open', 'df_disable_comments_status', 20, 2 );
 
 // Hide existing comments
 function df_disable_comments_hide_existing_comments( $comments ) {
@@ -408,14 +404,11 @@ function df_disable_comments_hide_existing_comments( $comments ) {
 	return $comments;
 }
 
-add_filter( 'comments_array', 'df_disable_comments_hide_existing_comments', 10, 2 );
-
 // Remove comments page in menu
 function df_disable_comments_admin_menu() {
 	remove_menu_page( 'edit-comments.php' );
 }
 
-add_action( 'admin_menu', 'df_disable_comments_admin_menu' );
 
 // Redirect any user trying to access comments page
 function df_disable_comments_admin_menu_redirect() {
@@ -426,14 +419,12 @@ function df_disable_comments_admin_menu_redirect() {
 	}
 }
 
-add_action( 'admin_init', 'df_disable_comments_admin_menu_redirect' );
-
 // Remove comments metabox from dashboard
 function df_disable_comments_dashboard() {
 	remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
 }
 
-add_action( 'admin_init', 'df_disable_comments_dashboard' );
+
 
 // Remove comments links from admin bar
 function df_disable_comments_admin_bar() {
@@ -442,10 +433,20 @@ function df_disable_comments_admin_bar() {
 	}
 }
 
+/* All these guys turn post coments on and off (globally and HARD)
+*/
+
 add_action( 'init', 'df_disable_comments_admin_bar' );
+add_action( 'admin_menu', 'df_disable_comments_admin_menu' );
+add_filter( 'comments_array', 'df_disable_comments_hide_existing_comments', 10, 2 );
+add_action( 'admin_init', 'df_disable_comments_post_types_support' );
+add_filter( 'comments_open', 'df_disable_comments_status', 20, 2 );
+add_filter( 'pings_open', 'df_disable_comments_status', 20, 2 );
+add_action( 'admin_init', 'df_disable_comments_admin_menu_redirect' );
+add_action( 'admin_init', 'df_disable_comments_dashboard' );
 
 
-//login logo to sue HDH logo instead
+//login logo to use client logo instead of Wordpress. Looks for logo.png in assets folder.
 function ch2_custom_login_logo() {
 	echo '<style type="text/css">
         .login.login h1 a {background-size: contain;
@@ -455,9 +456,12 @@ function ch2_custom_login_logo() {
 
 add_action( 'login_head', 'ch2_custom_login_logo' );
 
+
+//said logo no longer sends to wordpress.com
 function ch2_login_logo_url() {
 	return get_bloginfo( 'url' );
 }
+
 
 add_filter( 'login_headerurl', 'ch2_login_logo_url' );
 
@@ -477,8 +481,11 @@ add_action( 'init', 'ch_add_editor_styles' );
  */
 function ch_add_editor_styles() {
 //find the globals stylesheet instead
+	//come back to this...
 	add_editor_style( get_stylesheet_uri() );
 }
+
+
 
 /*
  * attempt to fix the events calendar ACF conflict
@@ -492,7 +499,7 @@ if ( function_exists( 'acf_get_dir' ) ) {
 		wp_deregister_script( 'tribe-select2' );
 	}
 
-	add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 99999999 );
+	//add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 99999999 );
 
 
 }
@@ -504,7 +511,6 @@ if ( function_exists( 'acf_get_dir' ) ) {
  */
 
 add_filter( 'gform_tabindex', '__return_false' );
-
 
 /**
  * Disable Emoji Support

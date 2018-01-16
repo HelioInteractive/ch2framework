@@ -21,9 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<script>
-    document.body.classList.add('js');
-</script>
+
 <div id="page" class="site">
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ch2_sandbox' ); ?></a>
@@ -65,7 +63,6 @@
                             aria-expanded="false">
                         <div class="fancy-burger"><span></span></div>
                     </button>
-									<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => 'quick-links' ) ); ?>
 									<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
                 </nav><!-- #site-navigation -->
             </div>
