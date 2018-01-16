@@ -2,23 +2,17 @@
 
 
 $actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-if ( strpos( $actual_link, '.dev' ) !== false ) :
+if ( strpos( $actual_link, '.local' ) !== false ) :
 	?>
 
-	<?php function blockMaker( $name, $type ) {
+	<?php function blockMaker( $name ) {
 	$clean_name = cleanName( $name );
 	$fancy_name = fancyName( $name );
-	if ( $type === 'layout' ):
-		makeLayout();
 
-    elseif ( $type === 'block' ):
 
 		makeblock( $clean_name, $fancy_name );
 		//	makeTemplate();
 		//makeStyle();
-
-	endif;
-
 }
 
 
@@ -32,7 +26,7 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 		echo '<br><br>';
 		echo 'Label: ' .$fancy_name;
 		echo '<br><br>';
-		echo 'Name: '. $layoutName;
+		echo 'Now, CLOSE this tab/window you do not want it refreshing in the background... sadness will happen.';
 
 		?>
 
@@ -120,20 +114,7 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 
 	}
 
-	function makeLayout( $name, $type ) {
 
-
-	}
-
-	function makeTemplate( $name, $type ) {
-
-
-	}
-
-	function makeStyle( $name, $type ) {
-
-
-	}
 
 	function cleanName( $name ) {
 		$name = strtolower( $name );
@@ -186,15 +167,6 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
     <form action="" method="get">
         <label for="field-group-name">Field Maker</label>
         <input type="text" class="field-group-name" name="field-group-name"/>
-        <select name="filed-group-type">
-            <option value="block">
-                block
-            </option>
-            <option value="layout">
-                Layout
-            </option>
-
-        </select>
 
         <input type="submit" name="submit" value="Make that thing!!!">
     </form>
@@ -206,9 +178,8 @@ if ( strpos( $actual_link, '.dev' ) !== false ) :
 
 
 		$name = htmlentities( $_GET['field-group-name'] );
-		$type = htmlentities( $_GET['filed-group-type'] );
 		//then you can use them in a PHP function.
-		blockMaker( $name, $type );
+		blockMaker( $name);
 	}
 
 
