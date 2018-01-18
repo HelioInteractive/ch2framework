@@ -158,15 +158,6 @@
                     "min": "",
                     "max": ""
                 },
-                "59fa06f1e6cb7": {
-                    "key": "59fa06f1e6cb7",
-                    "name": "two_column_text_and_photo_blocks",
-                    "label": "Two column text and photo blocks",
-                    "display": "block",
-                    "sub_fields": [],
-                    "min": "",
-                    "max": ""
-                },
                 "59fa0736e6cb8": {
                     "key": "59fa0736e6cb8",
                     "name": "image_slider",
@@ -217,5 +208,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516287117
+    "modified": 1516289736
 }
