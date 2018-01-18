@@ -27,25 +27,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_5a05ad82a6598",
-            "label": "Main address",
-            "name": "main_address",
-            "type": "textarea",
-            "instructions": "Appears in the footer",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "br"
-        },
-        {
             "key": "field_5a05add8a659a",
             "label": "Social links",
             "name": "social_links",
@@ -108,25 +89,6 @@
                     "mime_types": ""
                 }
             ]
-        },
-        {
-            "key": "field_5a05c1022fb63",
-            "label": "Privacy Policy",
-            "name": "privacy_policy",
-            "type": "page_link",
-            "instructions": "The page that should be linked to in the footer.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 0,
-            "multiple": 0
         }
     ],
     "location": [
@@ -146,5 +108,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510596522
+    "modified": 1516285271
 }

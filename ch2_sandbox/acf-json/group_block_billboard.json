@@ -7,7 +7,6 @@
             "label": "Style",
             "name": "style",
             "type": "select",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -30,39 +29,10 @@
             "placeholder": ""
         },
         {
-            "key": "field_59fafff5ec023",
-            "label": "Accent color",
-            "name": "accent_color",
-            "type": "select",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "green": "green",
-                "orange": "orange",
-                "purple": "purple",
-                "yellow": "yellow"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
-        },
-        {
             "key": "field_59fafe4fec020",
             "label": "Background Image",
             "name": "background_image",
             "type": "image",
-            "value": null,
             "instructions": "2000px by 900px",
             "required": 0,
             "conditional_logic": 0,
@@ -87,7 +57,6 @@
             "label": "Background focal point",
             "name": "focus",
             "type": "select",
-            "value": null,
             "instructions": "Where is the focal point of this header image?",
             "required": 0,
             "conditional_logic": 0,
@@ -122,7 +91,6 @@
             "label": "Heading",
             "name": "heading",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -142,7 +110,6 @@
             "label": "Quote text",
             "name": "quote_text",
             "type": "textarea",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -170,7 +137,6 @@
             "label": "Copy",
             "name": "copy",
             "type": "textarea",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -205,7 +171,6 @@
             "label": "Button text",
             "name": "button_text",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -240,7 +205,6 @@
             "label": "Button link",
             "name": "button_link",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -293,5 +257,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1509657729
+    "modified": 1516285647
 }

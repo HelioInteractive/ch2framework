@@ -18,7 +18,7 @@
             "layouts": {
                 "59f9f33c77d9e": {
                     "key": "59f9f33c77d9e",
-                    "name": "General copy",
+                    "name": "general_copy",
                     "label": "General copy",
                     "display": "block",
                     "sub_fields": [
@@ -197,7 +197,9 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "post"
-            },
+            }
+        ],
+        [
             {
                 "param": "post_type",
                 "operator": "!=",
@@ -210,8 +212,10 @@
     "style": "acftc-group-0",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1516138467
+    "modified": 1516287117
 }
