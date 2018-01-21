@@ -1400,7 +1400,8 @@ a {
   #masthead .site-branding {
     width: 6.8rem; }
     #masthead .site-branding .site-title {
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin: 0; }
   #masthead .button-box {
     z-index: 2;
     position: absolute;

@@ -14,12 +14,8 @@ $background       = $background_image['url']; ?>
         <div class="inner-block-wrapper">
 
             <div class="billboard--content">
-                
-				<?php if ( is_front_page() ) : ?>
-					<h2 class="billboard--title"> <?php the_sub_field( 'heading' ); ?></h2>
-				<?php else : ?>
-					<h1 class="billboard--title"> <?php the_sub_field( 'heading' ); ?></h1>
-				<?php endif; ?>
+
+				<h1 class="billboard--title"> <?php the_sub_field( 'heading' ); ?></h1>
 
 				<?php if ( get_sub_field( 'copy' ) ): ?>
                 	<div class="copy"> <?php the_sub_field( 'copy' ); ?></div>
