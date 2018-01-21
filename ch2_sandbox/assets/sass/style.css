@@ -387,7 +387,7 @@ template {
 .col > *:last-child, .col .module > *:last-child {
   margin-bottom: 0; }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0.75rem;
@@ -656,9 +656,9 @@ template {
     margin-left: 0%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     float: left; }
-  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     width: 100%; }
   .col-md-11 {
     width: 91.66666667%; }
@@ -1808,104 +1808,6 @@ Search
 /*--------------------------------------------------------------
 ## Single Event
 --------------------------------------------------------------*/
-.tribe_events-template-default .site-content {
-  background: #f6f6f6; }
-
-#tribe-events-pg-template,
-.tribe-events-pg-template {
-  padding-left: .75rem;
-  padding-right: .75rem; }
-
-.tribe-events-schedule {
-  margin: .375rem 0 .75em; }
-
-#tribe-events-content a,
-.tribe-events-adv-list-widget .tribe-events-widget-link a,
-.tribe-events-adv-list-widget .tribe-events-widget-link a:hover,
-.tribe-events-back a, .tribe-events-back a:hover,
-.tribe-events-event-meta a,
-.tribe-events-list-widget .tribe-events-widget-link a,
-.tribe-events-list-widget .tribe-events-widget-link a:hover,
-ul.tribe-events-sub-nav a,
-ul.tribe-events-sub-nav a:hover,
-h1.tribe-events-single-event-title,
-h3.tribe-events-single-section-title,
-dd.tribe-venue {
-  color: #96d6e0;
-  font-weight: 400; }
-
-h1.tribe-events-single-event-title {
-  font-size: 1.4rem; }
-
-h2 .tribe-event-date-start,
-h2 .tribe-event-time {
-  color: #96d6e0;
-  font-size: 1rem; }
-
-h3.tribe-events-single-section-title {
-  color: #7d7d7d;
-  font-weight: 700;
-  font-size: 1rem; }
-
-.tribe-events-meta-group .tribe-events-single-section-title {
-  font-size: 1rem; }
-
-#tribe-events .tribe-events-content p,
-.tribe-events-after-html p,
-.tribe-events-before-html p {
-  margin: 0 0 .5rem; }
-
-.single-tribe_events .tribe-events-event-meta .tribe-events-meta-group dl,
-#tribe-events .tribe-events-content p,
-.tribe-events-after-html p,
-.tribe-events-before-html p {
-  color: #7d7d7d;
-  font-weight: 700; }
-
-.single-tribe_events .tribe-events-cal-links {
-  padding-top: 2.25rem; }
-
-.tribe-events-calendar thead th {
-  background-color: #96d6e0;
-  font-size: .64rem; }
-
-#tribe-events .tribe-events-button,
-#tribe-events .tribe-events-button:hover,
-#tribe_events_filters_wrapper input[type=submit],
-.tribe-events-button,
-.tribe-events-button.tribe-active:hover,
-.tribe-events-button.tribe-inactive,
-.tribe-events-button:hover,
-.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
-.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a,
-#tribe-bar-form .tribe-bar-submit input[type=submit] {
-  background-color: #96d6e0;
-  border-radius: 0;
-  font-size: .6rem; }
-
-.single-tribe_events .tribe-events-event-meta {
-  background: #f6f6f6;
-  border: none; }
-
-.single-tribe_events #tribe-events-content .tribe-events-event-meta dt,
-.single-tribe_events #tribe-events-content .tribe-events-event-meta dd {
-  font-size: .8rem; }
-
-.single-tribe_events #tribe-events-content .tribe-events-event-meta dt {
-  padding-left: 0; }
-
-.single-tribe_events #tribe-events-content .tribe-events-event-meta dd {
-  font-weight: 400; }
-
-.single-tribe_events #tribe-events-content .tribe-events-event-meta dt:after {
-  content: "\a";
-  white-space: pre; }
-
-.single-tribe_events .secondary .tribe-events-venue-map {
-  width: 100%;
-  margin: 20px 0 0 0;
-  padding-left: 0; }
-
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -2105,37 +2007,11 @@ object {
           margin: 0 auto; } }
       .block.text_and_icons .icons-wrapper .icons-text-wrapper img {
         border-radius: 50%; }
-      .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-        padding-top: 1.25rem;
-        margin-bottom: .5rem;
-        font-size: .8rem;
-        color: #262626;
-        font-weight: 700; }
-        @media (max-width: 992px) {
-          .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-            font-size: 1rem; } }
-        @media (max-width: 768px) {
-          .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-            font-size: 1.2rem; } }
-      .block.text_and_icons .icons-wrapper .icons-text-wrapper p.small, .block.text_and_icons .icons-wrapper .icons-text-wrapper .tribe-events-back, .block.text_and_icons .icons-wrapper .icons-text-wrapper .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group dl, .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group .block.text_and_icons .icons-wrapper .icons-text-wrapper dl, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-      #tribe-events .tribe-events-content p,
-      #tribe-events .tribe-events-content .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-      .tribe-events-after-html p,
-      .tribe-events-after-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-      .tribe-events-before-html p,
-      .tribe-events-before-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-        padding-top: 0;
-        font-size: .75rem;
-        font-weight: 400; }
-        @media (min-width: 992px) {
-          .block.text_and_icons .icons-wrapper .icons-text-wrapper p.small, .block.text_and_icons .icons-wrapper .icons-text-wrapper .tribe-events-back, .block.text_and_icons .icons-wrapper .icons-text-wrapper .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group dl, .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group .block.text_and_icons .icons-wrapper .icons-text-wrapper dl, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          #tribe-events .tribe-events-content p,
-          #tribe-events .tribe-events-content .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          .tribe-events-after-html p,
-          .tribe-events-after-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          .tribe-events-before-html p,
-          .tribe-events-before-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-            font-size: 1rem; } }
+      .block.text_and_icons .icons-wrapper .icons-text-wrapper h3 {
+        margin-top: .75em; }
+      .block.text_and_icons .icons-wrapper .icons-text-wrapper p.small a {
+        display: inline-block;
+        margin-top: .75em; }
 
 /*--------------------------------------------------------------
 # Text and table
