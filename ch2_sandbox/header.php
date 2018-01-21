@@ -32,10 +32,16 @@
                 <div class="site-branding">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
                        rel="home">
-											<?php $site_logo = get_field( 'site_logo', 'option' ); ?>
-											<?php if ( $site_logo ) { ?>
-                          <img src="<?php echo $site_logo['url']; ?>" alt="<?php echo $site_logo['alt']; ?>"/>
-											<?php } ?>
+						<?php $site_logo = get_field( 'site_logo', 'option' ); ?>
+						<?php if ( $site_logo ) { ?>
+                        	<img src="<?php echo $site_logo['url']; ?>" alt="<?php echo $site_logo['alt']; ?>"/>
+						<?php } else { ?>
+							<?php if ( is_front_page() ) : ?>
+								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<?php else : ?>
+								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<?php endif; ?>
+						<?php } ?>
                     </a>
                 </div><!-- .site-branding -->
                 <div class="button-box">

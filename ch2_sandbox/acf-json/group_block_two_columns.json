@@ -7,7 +7,6 @@
             "label": "default bg",
             "name": "default_bg",
             "type": "clone",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -29,7 +28,6 @@
             "label": "Accent color",
             "name": "accent_color",
             "type": "select",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,7 +57,6 @@
             "label": "Block heading (optional)",
             "name": "block_heading",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -79,7 +76,6 @@
             "label": "Columns",
             "name": "columns",
             "type": "repeater",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -99,7 +95,6 @@
                     "label": "Column Style",
                     "name": "column_style",
                     "type": "select",
-                    "value": null,
                     "instructions": "Choose what type of content this column will contain.",
                     "required": 0,
                     "conditional_logic": 0,
@@ -125,10 +120,17 @@
                     "label": "Column heading (optional)",
                     "name": "column_heading_optional",
                     "type": "text",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59fb265348954",
+                                "operator": "==",
+                                "value": "general"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -145,7 +147,6 @@
                     "label": "Copy",
                     "name": "copy",
                     "type": "wysiwyg",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": [
@@ -173,7 +174,6 @@
                     "label": "Image",
                     "name": "image",
                     "type": "image",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": [
@@ -226,5 +226,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510192561
+    "modified": 1516507106
 }
