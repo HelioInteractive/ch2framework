@@ -7,7 +7,6 @@
             "label": "default bg",
             "name": "default_bg",
             "type": "clone",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -29,7 +28,6 @@
             "label": "Accent color",
             "name": "accent_color",
             "type": "select",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,7 +57,6 @@
             "label": "Heading",
             "name": "heading",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -79,7 +76,6 @@
             "label": "Copy",
             "name": "copy",
             "type": "textarea",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -99,7 +95,6 @@
             "label": "Table",
             "name": "table",
             "type": "table",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -133,5 +128,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510070370
+    "modified": 1516564055
 }

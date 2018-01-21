@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Flank5
+ * @package ch2
  */
 
 get_header(); ?>

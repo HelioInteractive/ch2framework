@@ -17,11 +17,17 @@
 }
 
 .grid-on .block {
-
 	border-bottom: 1px dashed $color__grey-trans;
 }
 
-.block .outer-block-wrapper .inner-block-wrapper {
+.outer-block-wrapper {
+	@extend .container
+}
+.inner-block-wrapper {
+	@extend .row;
+}
+  
+.outer-block-wrapper .inner-block-wrapper {
 	&:before, &:after {
 		display: none;
 	}
