@@ -2,32 +2,7 @@
     "key": "group_block_billboard",
     "title": "Block - Billboard",
     "fields": [
-        {
-            "key": "field_59fafc66ec01e",
-            "label": "Style",
-            "name": "style",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "1": "Heading with color text box and quote",
-                "2": "Heading with color text box and CTA",
-                "3": "Centered CTA text"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
-        },
+        false,
         {
             "key": "field_59fafe4fec020",
             "label": "Background Image",
@@ -105,33 +80,7 @@
             "append": "",
             "maxlength": ""
         },
-        {
-            "key": "field_59faff3aec022",
-            "label": "Quote text",
-            "name": "quote_text",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "wpautop"
-        },
+        false,
         {
             "key": "field_59fb01ecec029",
             "label": "Copy",
@@ -257,5 +206,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516564001
+    "modified": 1516568245
 }
