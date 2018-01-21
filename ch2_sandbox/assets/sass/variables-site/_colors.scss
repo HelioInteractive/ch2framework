@@ -1,21 +1,13 @@
 //ok these are not terrible... and are actually useful if we just apply whatever branding styles we get from client to them
 //open books Colors
 
-$color__light-grey: #f6f6f6;
-$color__grey: #7d7d7d;
-$color__green: #91c02b;
-$color__orange: #fb830f;
-$color__purple: #9b1a87;
-$color__yellow: #e9d241;
+$color__brand: blue;
+$color__brand-alt: orange;
+
+$color__light-gray: #f6f6f6;
+$color__gray: #7d7d7d;
 $color__black: #262626;
 $color__white: #fff;
-
-$color__grey-trans: transparentize($color__grey, 0.4);
-$color__green-trans: transparentize($color__green, .20);
-$color__yellow-trans: transparentize($color__yellow, 0.25);
-$color__purple-trans: transparentize($color__purple, 0.25);
-$color__orange-trans: transparentize($color__orange, 0.4);
-
 
 
 //default styles below this line
@@ -37,9 +29,9 @@ $color__text-input-focus: #111;
 
 
 //these are main typography colors
-$color__link: $color__grey;
-$color__link-visited: darken($color__grey, .15);
-$color__link-hover: lighten($color__orange, .15);
+$color__link: $color__gray;
+$color__link-visited: darken($color__gray, .15);
+$color__link-hover: lighten($color__brand, .15);
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;

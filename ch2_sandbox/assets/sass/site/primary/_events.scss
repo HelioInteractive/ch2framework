@@ -1,5 +1,5 @@
 .tribe_events-template-default .site-content {
-	background: $color__light-grey;
+	background: $color__light-gray;
 }
 #tribe-events-pg-template,
 .tribe-events-pg-template {
@@ -27,7 +27,7 @@ ul.tribe-events-sub-nav a:hover,
 h1.tribe-events-single-event-title,
 h3.tribe-events-single-section-title,
 dd.tribe-venue {
-	color: $color__green;
+	color: $color__brand;
 	font-weight: 400;
 }
 h1.tribe-events-single-event-title {
@@ -35,11 +35,11 @@ h1.tribe-events-single-event-title {
 }
 h2 .tribe-event-date-start,
 h2 .tribe-event-time {
-	color: $color__green;
+	color: $color__brand;
 	font-size: 1rem;
 }
 h3.tribe-events-single-section-title {
-	color: $color__grey;
+	color: $color__gray;
 	font-weight: 700;
 	font-size: 1rem;
 }
@@ -56,14 +56,14 @@ h3.tribe-events-single-section-title {
 .tribe-events-after-html p,
 .tribe-events-before-html p {
 	@extend p.small;
-	color: $color__grey;
+	color: $color__gray;
 	font-weight: 700;
 }
 .single-tribe_events .tribe-events-cal-links {
 	padding-top: 2.25rem;
 }
 .tribe-events-calendar thead th {
-	background-color: $color__green;
+	background-color: $color__brand;
 	font-size: .64rem;
 }
 #tribe-events .tribe-events-button,
@@ -76,12 +76,12 @@ h3.tribe-events-single-section-title {
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a,
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
-	background-color: $color__green;
+	background-color: $color__brand;
 	border-radius: 0;
 	font-size: .6rem;
 }
 .single-tribe_events .tribe-events-event-meta {
-	background: $color__light-grey;
+	background: $color__light-gray;
 	border: none;
 }
 .single-tribe_events #tribe-events-content .tribe-events-event-meta dt,

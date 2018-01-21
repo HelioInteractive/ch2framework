@@ -1163,7 +1163,7 @@ a {
   a:visited {
     color: #7d7d7d; }
   a:hover, a:focus, a:active {
-    color: #fb8310; }
+    color: #0101ff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1418,7 +1418,7 @@ header {
   header .main-navigation a {
     color: #7d7d7d; }
     header .main-navigation a:hover {
-      color: #fb830f; }
+      color: blue; }
   @media (max-width: 599px) {
     header .main-navigation li {
       width: 100%; } }
@@ -1534,7 +1534,7 @@ header {
   align-items: center;
   justify-content: center; }
   #colophon address {
-    color: #91c02b;
+    color: blue;
     font-size: .8rem;
     line-height: 1.35;
     font-weight: bold;
@@ -1638,7 +1638,7 @@ Search
 .search-results h2.entry-title a {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #fb830f; }
+  color: blue; }
 
 .search-results .entry-footer {
   background: #f6f6f6; }
@@ -1697,7 +1697,7 @@ Search
   .post-type-archive-team_member .member .member-photo {
     margin-bottom: 1.8rem; }
   .post-type-archive-team_member .member .name {
-    color: #fb830f;
+    color: blue;
     font-size: 1.3rem; }
   .post-type-archive-team_member .member .role {
     color: #7d7d7d;
@@ -1749,7 +1749,7 @@ Search
   .post-type-archive-team_member .bod .board-member, .post-type-archive-team_member .bod .bod-divider, .post-type-archive-team_member .bod .role {
     font-size: 1.3rem; }
   .post-type-archive-team_member .bod .board-member, .post-type-archive-team_member .bod .bod-divider {
-    color: #fb830f; }
+    color: blue; }
   .post-type-archive-team_member .bod .role {
     color: #7d7d7d; }
   .post-type-archive-team_member .bod .organization {
@@ -1782,7 +1782,7 @@ ul.tribe-events-sub-nav a:hover,
 h1.tribe-events-single-event-title,
 h3.tribe-events-single-section-title,
 dd.tribe-venue {
-  color: #91c02b;
+  color: blue;
   font-weight: 400; }
 
 h1.tribe-events-single-event-title {
@@ -1790,7 +1790,7 @@ h1.tribe-events-single-event-title {
 
 h2 .tribe-event-date-start,
 h2 .tribe-event-time {
-  color: #91c02b;
+  color: blue;
   font-size: 1rem; }
 
 h3.tribe-events-single-section-title {
@@ -1817,7 +1817,7 @@ h3.tribe-events-single-section-title {
   padding-top: 2.25rem; }
 
 .tribe-events-calendar thead th {
-  background-color: #91c02b;
+  background-color: blue;
   font-size: .64rem; }
 
 #tribe-events .tribe-events-button,
@@ -1830,7 +1830,7 @@ h3.tribe-events-single-section-title {
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a,
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
-  background-color: #91c02b;
+  background-color: blue;
   border-radius: 0;
   font-size: .6rem; }
 
@@ -1955,11 +1955,14 @@ object {
 .block.default-2 {
   background: #f6f6f6; }
 
+.block.default-3 {
+  background: blue; }
+
 .block {
   padding: 3rem 0 4rem; }
 
 .grid-on .block {
-  border-bottom: 1px dashed rgba(125, 125, 125, 0.6); }
+  border-bottom: 1px dashed #7d7d7d; }
 
 .outer-block-wrapper .inner-block-wrapper:before, .outer-block-wrapper .inner-block-wrapper:after {
   display: none; }
@@ -2344,11 +2347,11 @@ object {
   .block.form .gform_wrapper .gform_footer input[type=submit],
   .block.form .gform_wrapper .gform_page_footer input.button,
   .block.form .gform_wrapper .gform_page_footer input[type=submit] {
-    background: #fb830f;
+    background: blue;
     color: #fff;
     border-radius: 10px;
     padding: 10px 30px;
-    border: 2px solid #fb830f;
+    border: 2px solid blue;
     font-size: .8rem;
     margin-top: 1rem; }
     .block.form .gform_wrapper .gform_footer input.button:hover,
@@ -2356,7 +2359,7 @@ object {
     .block.form .gform_wrapper .gform_page_footer input.button:hover,
     .block.form .gform_wrapper .gform_page_footer input[type=submit]:hover {
       background: #fff;
-      color: #fb830f; }
+      color: blue; }
   .block.form .gform_wrapper select {
     color: #7d7d7d; }
 

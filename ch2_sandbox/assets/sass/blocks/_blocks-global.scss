@@ -3,7 +3,11 @@
 }
 
 .block.default-2 {
-	background: $color__light-grey;
+	background: $color__light-gray;
+}
+
+.block.default-3 {
+	background: $color__brand;
 }
 
 //todo turn this back on in production.
@@ -17,7 +21,7 @@
 }
 
 .grid-on .block {
-	border-bottom: 1px dashed $color__grey-trans;
+	border-bottom: 1px dashed $color__gray;
 }
 
 .outer-block-wrapper {

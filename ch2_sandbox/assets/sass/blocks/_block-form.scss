@@ -9,7 +9,7 @@
 	  font-size: 1.6em;
   }
   .gform_wrapper span.gform_description {
-	  color: $color__grey;
+	  color: $color__gray;
   }
   .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_first,
   .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield span.name_last,
@@ -64,20 +64,20 @@
   .gform_wrapper .gform_footer input[type=submit],
   .gform_wrapper .gform_page_footer input.button,
   .gform_wrapper .gform_page_footer input[type=submit] {
-	  background: $color__orange;
+	  background: $color__brand;
 	  color: $color__white;
 	  border-radius: 10px;
 	  padding: 10px 30px;
-	  border: 2px solid $color__orange;
+	  border: 2px solid $color__brand;
 	  font-size: .8rem;
 	  margin-top: 1rem;
 	  &:hover {
 		  background: $color__white;
-		  color: $color__orange
+		  color: $color__brand
 	  }
   }
   .gform_wrapper select {
-	  color: $color__grey;
+	  color: $color__gray;
   }
   
   

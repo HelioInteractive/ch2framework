@@ -82,7 +82,7 @@ header {
 		}
 		.search-field {
 			border-radius: 0;
-			border-bottom: solid 1px $color__grey;
+			border-bottom: solid 1px $color__gray;
 			height: 35px;
 			margin: 0;
 		}
@@ -117,9 +117,9 @@ header {
 			padding: 1rem 0 0;
 		}
 		a {
-			color: $color__grey;
+			color: $color__gray;
 			&:hover {
-				color: $color__orange;
+				color: $color__brand;
 
 			}
 		}
@@ -158,13 +158,13 @@ header {
 			right: 0;
 			padding: 0;
 			top: calc(100% - 1.5rem);
-			//@include button-alt($color__grey);
+			//@include button-alt($color__gray);
 			//	font-size: 1.2em !important;
 			//padding: .4em .6em !important;
 			//	z-index: 11;
 			color: transparent;
 			&:hover {
-				//	@include button-alt($color__orange);
+				//	@include button-alt($color__brand);
 			}
 			.fancy-burger {
 				height: 100%;
@@ -178,7 +178,7 @@ header {
 					width: 30px;
 					height: 4px;
 					display: block;
-					background: $color__grey;
+					background: $color__gray;
 					position: relative;
 					&:after, &:before {
 						transition: all .5s ease-out;
@@ -189,7 +189,7 @@ header {
 						width: 30px;
 						height: 4px;
 						display: block;
-						background: $color__grey;
+						background: $color__gray;
 
 					}
 					&:before {
