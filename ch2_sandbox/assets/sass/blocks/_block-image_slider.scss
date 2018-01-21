@@ -2,9 +2,8 @@
 	text-align: center;
 
 	/*content here*/
-	.image_slider--title, .image_slider--copy, .slider-wrapper {
-		@extend .col-md-10;
-		@extend .col-md-push-1;
+	.image_slider--content {
+		@extend .col-md-12;
 	}
 
 	.slick-arrow {

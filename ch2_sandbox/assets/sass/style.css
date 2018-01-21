@@ -56,6 +56,7 @@ This mixin helps with fonts that could potentially get TOO small while scaling o
 # reboot
 --------------------------------------------------------------*/
 html {
+  font-size: 18px;
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
@@ -79,11 +80,17 @@ body {
   position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: normal;
   line-height: 1.5;
   color: #212529;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    body {
+      font-size: .875rem; } }
+  @media (min-width: 992px) {
+    body {
+      font-size: 1rem; } }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -380,7 +387,7 @@ template {
 .col > *:last-child, .col .module > *:last-child {
   margin-bottom: 0; }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .block.image_slider .image_slider--title, .block.image_slider .image_slider--copy, .block.image_slider .slider-wrapper, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0.75rem;
@@ -649,13 +656,13 @@ template {
     margin-left: 0%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .block.image_slider .image_slider--title, .block.image_slider .image_slider--copy, .block.image_slider .slider-wrapper, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     float: left; }
-  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .post-type-archive-team_member .group, #tribe-events-content, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     width: 100%; }
   .col-md-11 {
     width: 91.66666667%; }
-  .col-md-10, .block.image_slider .image_slider--title, .block.image_slider .image_slider--copy, .block.image_slider .slider-wrapper {
+  .col-md-10 {
     width: 83.33333333%; }
   .col-md-9 {
     width: 75%; }
@@ -723,7 +730,7 @@ template {
     left: 25%; }
   .col-md-push-2 {
     left: 16.66666667%; }
-  .col-md-push-1, .block.image_slider .image_slider--title, .block.image_slider .image_slider--copy, .block.image_slider .slider-wrapper {
+  .col-md-push-1 {
     left: 8.33333333%; }
   .col-md-push-0 {
     left: auto; }
@@ -961,7 +968,51 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1,
+h2.billboard--title {
+  font-weight: normal;
+  font-size: 2rem; }
+  @media (min-width: 768px) {
+    h1,
+    h2.billboard--title {
+      font-size: 3rem; } }
+  @media (min-width: 992px) {
+    h1,
+    h2.billboard--title {
+      font-size: 4rem; } }
+
+h2,
+h3.call_to_action--title,
+h3.text_and_icons--title,
+h3.image_slider--title,
+h3.logo_block--title {
+  font-weight: normal;
+  font-size: 1rem; }
+  @media (min-width: 768px) {
+    h2,
+    h3.call_to_action--title,
+    h3.text_and_icons--title,
+    h3.image_slider--title,
+    h3.logo_block--title {
+      font-size: 1.5rem; } }
+  @media (min-width: 992px) {
+    h2,
+    h3.call_to_action--title,
+    h3.text_and_icons--title,
+    h3.image_slider--title,
+    h3.logo_block--title {
+      font-size: 2rem; } }
+
+h4 {
+  font-weight: normal;
+  text-decoration: underline; }
+
+h5 {
+  text-transform: uppercase; }
 
 p {
   margin-bottom: 1.5em; }
@@ -1348,6 +1399,8 @@ a {
     position: relative; }
   #masthead .site-branding {
     width: 6.8rem; }
+    #masthead .site-branding .site-title {
+      font-size: 1rem; }
   #masthead .button-box {
     z-index: 2;
     position: absolute;
@@ -1515,7 +1568,6 @@ a {
       width: auto; }
     #masthead .menu-main-navigation-container a {
       text-align: center;
-      font-size: .7em;
       padding: .2rem .5rem; }
     #masthead .menu-main-navigation-container .menu > li:nth-last-child(1), #masthead .menu-main-navigation-container .menu > li:nth-last-child(2) {
       margin-left: .5rem; } }
@@ -1544,7 +1596,6 @@ a {
     align-items: center;
     align-self: center;
     justify-content: center;
-    font-size: .52rem;
     padding: .64rem 0; }
   #colophon .menu-item {
     display: flex;
@@ -1568,7 +1619,6 @@ a {
     justify-content: center; }
   #colophon .site-info, #colophon .site-info a {
     color: white;
-    font-size: 11px;
     font-weight: normal; }
   #colophon .sep {
     padding: 10px; }
@@ -1983,7 +2033,7 @@ object {
   position: relative;
   min-height: 500px;
   height: calc(100vh - 6.3rem);
-  max-height: 1000px;
+  max-height: 800px;
   /*content here*/ }
   @media (max-width: 768px) {
     .block.billboard {
@@ -2004,7 +2054,6 @@ object {
     justify-content: center; }
   .block.billboard .billboard--title {
     color: #fff;
-    font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-shadow: 0 0 75px rgba(0, 0, 0, 0.5); }
@@ -2032,9 +2081,8 @@ object {
 --------------------------------------------------------------*/
 .block.text_and_icons {
   /*content here*/ }
-  @media (max-width: 450px) {
-    .block.text_and_icons .text_and_icons--content {
-      text-align: center; } }
+  .block.text_and_icons .text_and_icons--content {
+    text-align: center; }
   .block.text_and_icons .icons-wrapper {
     display: -webkit-flex;
     display: flex;
@@ -2076,19 +2124,9 @@ object {
       .tribe-events-before-html p,
       .tribe-events-before-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
         padding-top: 0;
-        font-size: .675rem;
-        font-weight: 400;
-        color: #7d7d7d; }
-        @media (max-width: 992px) {
-          .block.text_and_icons .icons-wrapper .icons-text-wrapper p.small, .block.text_and_icons .icons-wrapper .icons-text-wrapper .tribe-events-back, .block.text_and_icons .icons-wrapper .icons-text-wrapper .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group dl, .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group .block.text_and_icons .icons-wrapper .icons-text-wrapper dl, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          #tribe-events .tribe-events-content p,
-          #tribe-events .tribe-events-content .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          .tribe-events-after-html p,
-          .tribe-events-after-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
-          .tribe-events-before-html p,
-          .tribe-events-before-html .block.text_and_icons .icons-wrapper .icons-text-wrapper p {
-            font-size: .8rem; } }
-        @media (max-width: 768px) {
+        font-size: .75rem;
+        font-weight: 400; }
+        @media (min-width: 992px) {
           .block.text_and_icons .icons-wrapper .icons-text-wrapper p.small, .block.text_and_icons .icons-wrapper .icons-text-wrapper .tribe-events-back, .block.text_and_icons .icons-wrapper .icons-text-wrapper .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group dl, .single-tribe_events .tribe-events-event-meta .tribe-events-meta-group .block.text_and_icons .icons-wrapper .icons-text-wrapper dl, .block.text_and_icons .icons-wrapper .icons-text-wrapper
           #tribe-events .tribe-events-content p,
           #tribe-events .tribe-events-content .block.text_and_icons .icons-wrapper .icons-text-wrapper p, .block.text_and_icons .icons-wrapper .icons-text-wrapper
@@ -2156,11 +2194,6 @@ object {
 .block.logo_block {
   text-align: center;
   /*content here*/ }
-  .block.logo_block .copy {
-    width: 85%;
-    margin: 0 auto; }
-  .block.logo_block h3 {
-    color: #7d7d7d; }
   .block.logo_block .logos-wrapper {
     width: 100%;
     margin: 0;
@@ -2186,17 +2219,6 @@ object {
   /*content here*/ }
   .block.call_to_action .inner-block-wrapper {
     text-align: center; }
-    .block.call_to_action .inner-block-wrapper h3 {
-      color: #7d7d7d;
-      font-weight: 700;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-  .block.call_to_action .call_to_action--content {
-    margin: 0 auto;
-    float: none; }
-    @media (min-width: 768px) {
-      .block.call_to_action .call_to_action--content {
-        width: 85%; } }
 
 /*--------------------------------------------------------------
 # Two columns
@@ -2206,12 +2228,8 @@ object {
   .block.two_columns .two_columns--content .col:nth-last-child(2) {
     padding-left: 0; }
   .block.two_columns h2 {
-    padding-bottom: 2.75rem; }
-    @media (max-width: 768px) {
-      .block.two_columns h2 {
-        text-align: center; } }
-  .block.two_columns h3 {
-    margin-top: -15px; }
+    padding-bottom: 2.75rem;
+    text-align: center; }
   .block.two_columns ul, .block.two_columns ol {
     margin: 0 0 1.5rem -.5rem; }
   .block.two_columns .col {

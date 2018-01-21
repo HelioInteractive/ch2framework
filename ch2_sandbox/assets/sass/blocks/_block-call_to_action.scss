@@ -6,21 +6,10 @@
 	}
 	.inner-block-wrapper {
 		text-align: center;
-		h3 {
-			color: $color__gray;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
 	}
 	/*content here*/
 	.call_to_action--content {
 		@extend .col-md-12;
-		@media (min-width: $bp_phone) {
-			width: 85%;
-		}
-		margin: 0 auto;
-		float: none;
 	}
 
 	//style 1 Color block, white button

@@ -9,12 +9,7 @@
 	}
 	h2 {
 		padding-bottom: 2.75rem;
-		@media (max-width: $bp_phone) {
-			text-align: center;
-		}
-	}
-	h3 {
-		margin-top: -15px;
+		text-align: center;
 	}
 	
 	ul, ol {

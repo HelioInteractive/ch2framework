@@ -28,7 +28,7 @@
 								<?php if ( $image ) { ?>
 									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 								<?php } ?>
-								<p><?php the_sub_field( 'icon_label' ); ?></p>
+								<h3><?php the_sub_field( 'icon_label' ); ?></h3>
 								<?php if ( get_sub_field( 'icon_text' ) ): ?>
 									<p class="small"><?php the_sub_field( 'icon_text' ); ?><br>
 								<?php endif; ?>

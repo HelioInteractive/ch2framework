@@ -3,9 +3,7 @@
   /*content here*/
   .text_and_icons--content {
 	  @extend .col-md-12;
-	  @media (max-width: 450px) {
 		text-align: center;
-	  }
   }
   
   .icons-wrapper {
@@ -47,13 +45,10 @@
 		  }
 		  p.small {
 			  padding-top: 0;
-			  font-size: .675rem;
+			  font-size: .75rem;
 			  font-weight: 400;
-			  color: $color__gray;
-			  @media (max-width: $bp_tablet) {
-				font-size: .8rem;
-			  }
-			  @media (max-width: $bp_phone) {
+
+			  @media (min-width: $bp_tablet) {
 				font-size: 1rem;
 			  }
 		  }

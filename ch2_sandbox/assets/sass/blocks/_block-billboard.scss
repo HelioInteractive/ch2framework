@@ -4,7 +4,7 @@
 	position: relative;
 	min-height: 500px;
 	height: calc(100vh - 6.3rem);
-	max-height: 1000px;
+	max-height: 800px;
 	@media (max-width: $bp_phone) {
 		min-height: 500px;
 	}
@@ -30,7 +30,6 @@
 	/*content here*/
 	.billboard--title {
 		color: $color__white;
-		font-weight: 700;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-shadow: 0 0 75px rgba(0, 0, 0, .5);

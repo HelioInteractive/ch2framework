@@ -17,15 +17,14 @@
     <div class="outer-block-wrapper">
         <div class="inner-block-wrapper">
 
-					<?php if ( get_field( 'main_address', 'option' ) ): ?>
+			<?php if ( get_field( 'main_address', 'option' ) ): ?>
               <address>
-								<?php the_field( 'main_address', 'option' ); ?>
+				<?php the_field( 'main_address', 'option' ); ?>
               </address>
-					<?php endif; ?>
-
+			<?php endif; ?>
 
             <nav id="footer-navigation" class="footer-navigation" role="navigation">
-							<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_id' => 'footer-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_id' => 'footer-menu' ) ); ?>
             </nav><!-- #site-navigation -->
             <div class="site-info">
                 &copy;<?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
