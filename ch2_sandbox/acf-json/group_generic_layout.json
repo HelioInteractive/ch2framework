@@ -263,6 +263,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5a641f4385124": {
+                    "key": "5a641f4385124",
+                    "name": "posts_with_filtering",
+                    "label": "Posts with filtering",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a641f5085125",
+                            "label": "clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a641ee19c28d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -296,5 +327,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516507773
+    "modified": 1516511076
 }

@@ -28,9 +28,9 @@
 							<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_id' => 'footer-menu' ) ); ?>
             </nav><!-- #site-navigation -->
             <div class="site-info">
-                &copy; Copyright 2017
+                &copy;<?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
                 <span class="sep"> | </span>All Rights Reserved<span class="sep"> | </span><a
-                        href="<?php the_field( 'privacy_policy', 'option' ); ?>">Privacy Policy</a>
+                        href="/privacy-policy/">Privacy Policy</a>
             </div><!-- .site-info -->
         </div>
     </div>
