@@ -15,14 +15,16 @@
 		<div class="filter"></div>
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
 			<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
-				?>
-				<?php if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php ch2_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<?php
-				endif; ?>
+				<div class="billboard--content">
+					<?php the_title( '<h1 class="billboard--title entry-title">', '</h1>' ); 
+					?>
+					<?php if ( 'post' === get_post_type() ) : ?>
+						<div class="copy entry-meta">
+							<p><?php ch2_posted_on(); ?></p>
+						</div><!-- .entry-meta -->
+						<?php
+					endif; ?>
+				</div>
 			</div>
 		</div>
 	</header><!-- .entry-header -->
@@ -30,6 +32,13 @@
 	<div class="block entry-content">
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
         	<div class="inner-block-wrapper"> <!-- probably extend with row or -->
+				
+				<div class="widget">
+					<h4 class="widget-title">Share</h4>
+					<div class="addthis_inline_share_toolbox"></div>
+				</div>
+				
+				<div class="content">
 				<?php
 					the_content( sprintf(
 						/* translators: %s: Name of current post. */
@@ -37,6 +46,7 @@
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					) );
 				?>
+				</div>
         	</div>
 		</div>
 	</div><!-- .entry-content -->
