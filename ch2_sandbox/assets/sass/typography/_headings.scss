@@ -8,6 +8,7 @@ h1,
 h2.billboard--title {
 	font-weight: normal;
 	font-size: 2rem;
+	line-height: 1.1;
 	@media (min-width: $bp-phone) {
 		font-size: 3rem
 	}
