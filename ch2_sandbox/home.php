@@ -13,19 +13,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
-		if ( have_posts() ) : ?>
-
-			<header class="page-header">
+		if ( have_posts() ) :
+			$background = get_the_post_thumbnail_url( get_option('page_for_posts', true), 'full' );
+			?>
+			<header class="page-header block billboard" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+				<div class="filter"></div>
 				<div class="outer-block-wrapper"> <!-- extend with needed container -->
 					<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-					<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						//the_archive_description( '<div class="archive-description">', '</div>' );
-					?>
+						<h1 class="page-title billboard--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
 					</div>
 				</div>
 			</header><!-- .page-header -->
 
+			<div class="block posts-container">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -35,10 +35,13 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/content', 'archive' );
 
 			endwhile;
-
+			?>
+			</div>
+			
+			<?php
 			the_posts_navigation();
 
 		else :

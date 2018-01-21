@@ -10,27 +10,24 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<?php $background = get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>
+	<header class="entry-header block billboard" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+		<div class="filter"></div>
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
-        	<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-				<?php
-				if ( is_single() ) :
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				endif;
-		
-				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php ch2_posted_on(); ?>
-				</div><!-- .entry-meta -->
-				<?php
+			<div class="inner-block-wrapper"> <!-- probably extend with row or -->
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); 
+				?>
+				<?php if ( 'post' === get_post_type() ) : ?>
+					<div class="entry-meta">
+						<?php ch2_posted_on(); ?>
+					</div><!-- .entry-meta -->
+					<?php
 				endif; ?>
-        	</div>
+			</div>
 		</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="block entry-content">
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
         	<div class="inner-block-wrapper"> <!-- probably extend with row or -->
 				<?php

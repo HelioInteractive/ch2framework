@@ -1336,21 +1336,19 @@ a {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-header {
+#masthead {
   /*
 	search box stuff
 	 */ }
-  header .outer-block-wrapper {
+  #masthead .outer-block-wrapper {
     padding-top: calc(.6rem + 5px);
-    padding-bottom: calc(.6rem + 5px);
-    background: white; }
-  header .inner-block-wrapper {
+    padding-bottom: calc(.6rem + 5px); }
+  #masthead .inner-block-wrapper {
     font-size: 1rem;
-    font-size: calc(12px + (16 - 12) * (100vw - 350px) / (1300 - 350));
     position: relative; }
-  header .site-branding {
+  #masthead .site-branding {
     width: 6.8rem; }
-  header .button-box {
+  #masthead .button-box {
     z-index: 2;
     position: absolute;
     top: 0;
@@ -1359,22 +1357,22 @@ header {
     justify-content: flex-end;
     width: auto;
     height: 33px; }
-  header .social {
+  #masthead .social {
     display: flex;
     justify-content: flex-end; }
-    header .social a {
+    #masthead .social a {
       height: 33px;
       width: 33px;
       display: flex;
       align-items: center;
       justify-content: flex-end; }
-      header .social a:hover {
+      #masthead .social a:hover {
         opacity: .5; }
-  header .search-box {
+  #masthead .search-box {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end; }
-    header .search-box .search-form {
+    #masthead .search-box .search-form {
       display: block;
       opacity: 0;
       width: 0;
@@ -1383,22 +1381,22 @@ header {
       transition: width 1.5s, opacity 1s;
       background: white;
       padding: 5px 5px 0; }
-    header .search-box.toggled .search-form {
+    #masthead .search-box.toggled .search-form {
       opacity: 1;
       width: 11.5rem; }
-    header .search-box input {
+    #masthead .search-box input {
       border: none; }
-    header .search-box label {
+    #masthead .search-box label {
       display: inline; }
-    header .search-box .search-field {
+    #masthead .search-box .search-field {
       border-radius: 0;
       border-bottom: solid 1px #7d7d7d;
       height: 35px;
       margin: 0; }
-  header .search-submit {
+  #masthead .search-submit {
     display: none;
     color: transparent; }
-  header .search-toggle, header .search-submit {
+  #masthead .search-toggle, #masthead .search-submit {
     outline: none;
     border: none;
     background: transparent url("../../assets/images/loupe.png") no-repeat right center;
@@ -1409,24 +1407,24 @@ header {
     width: 33px;
     padding: 5px;
     padding: 0; }
-    header .search-toggle:hover, header .search-submit:hover {
+    #masthead .search-toggle:hover, #masthead .search-submit:hover {
       opacity: .5; }
-  header .toggled .search-toggle {
+  #masthead .toggled .search-toggle {
     background-image: url("../../assets/images/close.png"); }
-  header .main-navigation.toggled {
+  #masthead .main-navigation.toggled {
     padding: 1rem 0 0; }
-  header .main-navigation a {
+  #masthead .main-navigation a {
     color: #7d7d7d; }
-    header .main-navigation a:hover {
+    #masthead .main-navigation a:hover {
       color: #96d6e0; }
   @media (max-width: 599px) {
-    header .main-navigation li {
+    #masthead .main-navigation li {
       width: 100%; } }
-  header .main-navigation .sub-menu {
+  #masthead .main-navigation .sub-menu {
     background: white;
     padding: .5em 1em; }
   @media (min-width: 600px) {
-    header .main-navigation {
+    #masthead .main-navigation {
       padding-right: 3em;
       height: 100%;
       position: absolute;
@@ -1437,7 +1435,7 @@ header {
       flex-direction: column;
       align-items: flex-end;
       justify-content: space-between; } }
-  header .main-navigation .menu-toggle {
+  #masthead .main-navigation .menu-toggle {
     border: none;
     background-color: transparent;
     position: absolute;
@@ -1447,21 +1445,21 @@ header {
     padding: 0;
     top: calc(100% - 1.5rem);
     color: transparent; }
-    header .main-navigation .menu-toggle .fancy-burger {
+    #masthead .main-navigation .menu-toggle .fancy-burger {
       height: 100%;
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      header .main-navigation .menu-toggle .fancy-burger span {
+      #masthead .main-navigation .menu-toggle .fancy-burger span {
         transition: all .5s;
         width: 30px;
         height: 4px;
         display: block;
         background: #7d7d7d;
         position: relative; }
-        header .main-navigation .menu-toggle .fancy-burger span:after, header .main-navigation .menu-toggle .fancy-burger span:before {
+        #masthead .main-navigation .menu-toggle .fancy-burger span:after, #masthead .main-navigation .menu-toggle .fancy-burger span:before {
           transition: all .5s ease-out;
           content: '';
           position: absolute;
@@ -1471,55 +1469,55 @@ header {
           height: 4px;
           display: block;
           background: #7d7d7d; }
-        header .main-navigation .menu-toggle .fancy-burger span:before {
+        #masthead .main-navigation .menu-toggle .fancy-burger span:before {
           bottom: -200%; }
-        header .main-navigation .menu-toggle .fancy-burger span:after {
+        #masthead .main-navigation .menu-toggle .fancy-burger span:after {
           top: -200%; }
-  header .toggled .menu-toggle.menu-toggle span {
+  #masthead .toggled .menu-toggle.menu-toggle span {
     transform: rotate(45deg); }
-    header .toggled .menu-toggle.menu-toggle span:before {
+    #masthead .toggled .menu-toggle.menu-toggle span:before {
       bottom: 0 !important;
       transform: rotate(-90deg); }
-    header .toggled .menu-toggle.menu-toggle span:after {
+    #masthead .toggled .menu-toggle.menu-toggle span:after {
       top: 0 !important;
       transform: rotate(-90deg); }
   @media (min-width: 600px) {
-    header .menu-quick-links-container {
+    #masthead .menu-quick-links-container {
       height: 33px;
       display: flex;
       align-items: flex-end;
       margin-right: 140px;
       flex-wrap: nowrap; }
-      header .menu-quick-links-container a {
+      #masthead .menu-quick-links-container a {
         padding: 0 .6rem;
         height: 100%;
         font-size: calc(12px + (14 - 12) * (100vw - 350px) / (1300 - 350));
         line-height: 1.1; }
-      header .menu-quick-links-container .menu > li {
+      #masthead .menu-quick-links-container .menu > li {
         position: relative; }
-      header .menu-quick-links-container .menu > li:not(:last-child) a {
+      #masthead .menu-quick-links-container .menu > li:not(:last-child) a {
         border-right: solid 1px black; }
-      header .menu-quick-links-container .menu > li:last-child a {
+      #masthead .menu-quick-links-container .menu > li:last-child a {
         padding-right: 0; }
-      header .menu-quick-links-container .menu > li:first-child a {
+      #masthead .menu-quick-links-container .menu > li:first-child a {
         padding-left: 0; } }
-  header .menu-main-navigation-container .menu > li {
+  #masthead .menu-main-navigation-container .menu > li {
     position: relative; }
   @media (min-width: 600px) {
-    header .menu-main-navigation-container .menu {
+    #masthead .menu-main-navigation-container .menu {
       display: flex;
       justify-content: flex-end;
       flex-wrap: nowrap; }
-    header .menu-main-navigation-container li {
+    #masthead .menu-main-navigation-container li {
       display: flex;
       align-items: flex-end;
       justify-content: space-around;
       width: auto; }
-    header .menu-main-navigation-container a {
+    #masthead .menu-main-navigation-container a {
       text-align: center;
       font-size: .7em;
       padding: .2rem .5rem; }
-    header .menu-main-navigation-container .menu > li:nth-last-child(1), header .menu-main-navigation-container .menu > li:nth-last-child(2) {
+    #masthead .menu-main-navigation-container .menu > li:nth-last-child(1), #masthead .menu-main-navigation-container .menu > li:nth-last-child(2) {
       margin-left: .5rem; } }
 
 /*--------------------------------------------------------------

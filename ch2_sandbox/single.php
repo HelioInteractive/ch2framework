@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() ); ?>
+			get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<div class="outer-block-wrapper"> <!-- extend with needed container -->
 				<div class="inner-block-wrapper"> <!-- probably extend with row or -->

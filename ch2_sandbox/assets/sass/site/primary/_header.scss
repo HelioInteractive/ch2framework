@@ -1,17 +1,10 @@
-header {
+#masthead {
 	.outer-block-wrapper {
-
 		padding-top: calc(.6rem + 5px);
 		padding-bottom: calc(.6rem + 5px);
-		background: white;
-
 	}
 	.inner-block-wrapper {
-
 		font-size: 1rem;
-		@include smallFont(16);
-		//margin-left: -.5*($gutter);
-		//	margin-right: -.5*($gutter);
 		position: relative;
 		@media (max-width: 599px) {
 
