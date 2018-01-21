@@ -145,7 +145,29 @@
                     "name": "text_and_icons",
                     "label": "Text and icons",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_5a64122dc7a80",
+                            "label": "clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_block_text_and_icons"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -154,7 +176,29 @@
                     "name": "text_and_table",
                     "label": "Text and table",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_5a641247c7a81",
+                            "label": "clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_block_text_and_table"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -163,7 +207,29 @@
                     "name": "image_slider",
                     "label": "Image slider",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_5a641259c7a82",
+                            "label": "clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_block_image_slider"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -172,7 +238,29 @@
                     "name": "logo_block",
                     "label": "Logo block",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_5a64126fc7a83",
+                            "label": "clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_block_logo_block"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -208,5 +296,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1516289736
+    "modified": 1516507773
 }
