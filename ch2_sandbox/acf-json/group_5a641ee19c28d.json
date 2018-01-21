@@ -3,23 +3,6 @@
     "title": "Block - Posts with Filtering",
     "fields": [
         {
-            "key": "field_5a641eebdc906",
-            "label": "Admin Note",
-            "name": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "There are no options for this block. It will display posts with category filtering available.",
-            "new_lines": "wpautop",
-            "esc_html": 0
-        },
-        {
             "key": "field_5a642237fc52c",
             "label": "Default Background",
             "name": "default_background",
@@ -39,6 +22,23 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
+        },
+        {
+            "key": "field_5a641eebdc906",
+            "label": "Admin Note",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "There are no options for this block. It will display posts with category filtering available.",
+            "new_lines": "wpautop",
+            "esc_html": 0
         }
     ],
     "location": [
@@ -46,6 +46,11 @@
             {
                 "param": "post_type",
                 "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
                 "value": "post"
             }
         ]
@@ -58,5 +63,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516511895
+    "modified": 1516512194
 }
