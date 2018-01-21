@@ -5,9 +5,8 @@
         {
             "key": "field_5a01d7bcf9ac4",
             "label": "default background",
-            "name": "default background",
+            "name": "default_background",
             "type": "clone",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -29,7 +28,6 @@
             "label": "Accent color",
             "name": "accent_color",
             "type": "select",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,7 +57,6 @@
             "label": "Heading",
             "name": "heading",
             "type": "text",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -79,7 +76,6 @@
             "label": "Copy",
             "name": "copy",
             "type": "textarea",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -99,7 +95,6 @@
             "label": "Slider",
             "name": "slider",
             "type": "repeater",
-            "value": null,
             "instructions": "Images should be at least 1000px wide and all images within the slider should be the same height.",
             "required": 0,
             "conditional_logic": 0,
@@ -119,7 +114,6 @@
                     "label": "Image",
                     "name": "image",
                     "type": "image",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -164,5 +158,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1510070271
+    "modified": 1516508899
 }
