@@ -1,41 +1,5 @@
 .block.three_circles {
 
-	&.style-1 {
-		//white elements
-		.three_circles--title {
-			color: white;
-		}
-		.single-circle-wrapper {
-			p {
-
-				color: black;
-				font-size: 1rem;
-				font-weight: bold;
-
-			}
-
-		}
-		.circle-link:hover p {
-			color: white;
-		}
-		.copy {
-			color: white;
-			font-weight: bold;
-			text-shadow: 0 0 50px rgba(0, 0, 0, .33);
-		}
-		
-		.button.button.button {
-			color: black;
-			border-color: white;
-			&:hover {
-				color: white;
-			}
-		}
-	}
-	&.style-2 {
-		//Plain background
-
-	}
 
 	/*content here*/
 	.three_circles--content {

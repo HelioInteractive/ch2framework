@@ -2365,23 +2365,6 @@ object {
 --------------------------------------------------------------*/
 .block.three_circles {
   /*content here*/ }
-  .block.three_circles.style-1 .three_circles--title {
-    color: white; }
-  .block.three_circles.style-1 .single-circle-wrapper p {
-    color: black;
-    font-size: 1rem;
-    font-weight: bold; }
-  .block.three_circles.style-1 .circle-link:hover p {
-    color: white; }
-  .block.three_circles.style-1 .copy {
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.33); }
-  .block.three_circles.style-1 .button.button.button {
-    color: black;
-    border-color: white; }
-    .block.three_circles.style-1 .button.button.button:hover {
-      color: white; }
   .block.three_circles .three_circles--content {
     text-align: center; }
   .block.three_circles .three_circles--title {
