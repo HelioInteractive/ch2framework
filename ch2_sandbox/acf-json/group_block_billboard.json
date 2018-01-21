@@ -2,7 +2,6 @@
     "key": "group_block_billboard",
     "title": "Block - Billboard",
     "fields": [
-        false,
         {
             "key": "field_59fafe4fec020",
             "label": "Background Image",
@@ -80,7 +79,6 @@
             "append": "",
             "maxlength": ""
         },
-        false,
         {
             "key": "field_59fb01ecec029",
             "label": "Copy",
@@ -88,22 +86,7 @@
             "type": "textarea",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "2"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "3"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -122,22 +105,7 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "2"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "3"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -156,22 +124,7 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "2"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_59fafc66ec01e",
-                        "operator": "==",
-                        "value": "3"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -206,5 +159,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516568245
+    "modified": 1516575414
 }
