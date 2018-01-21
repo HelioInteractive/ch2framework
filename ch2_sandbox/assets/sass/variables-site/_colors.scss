@@ -1,8 +1,8 @@
 //ok these are not terrible... and are actually useful if we just apply whatever branding styles we get from client to them
 //open books Colors
 
-$color__brand: blue;
-$color__brand-alt: orange;
+$color__brand: #96d6e0;
+$color__brand-alt: #fcb033;
 
 $color__light-gray: #f6f6f6;
 $color__gray: #7d7d7d;
@@ -29,9 +29,9 @@ $color__text-input-focus: #111;
 
 
 //these are main typography colors
-$color__link: $color__gray;
-$color__link-visited: darken($color__gray, .15);
-$color__link-hover: lighten($color__brand, .15);
+$color__link: $color__brand;
+$color__link-visited: darken($color__brand, .15);
+$color__link-hover: lighten($color__brand-alt, .15);
 $color__text-main: #404040;
 
 $color__border-button: #ccc #ccc #bbb;

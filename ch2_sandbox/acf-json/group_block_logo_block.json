@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_5a01d80689279",
-            "label": "default bg",
-            "name": "default_bg",
+            "label": "Default Background",
+            "name": "default_background",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -148,5 +148,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516566178
+    "modified": 1516567227
 }

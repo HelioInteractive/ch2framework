@@ -6,7 +6,7 @@
             "key": "field_5a01d3a068d0b",
             "label": "Default background (optional)",
             "name": "default_background",
-            "type": "select",
+            "type": "clone",
             "instructions": "By default, before any styles, accent colors or backgrounds are applied all blocks are either light grey or white. This can be very useful by making multiple blocks visually act as one by assigning them the same background style.",
             "required": 0,
             "conditional_logic": 0,
@@ -15,19 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "1": "White",
-                "2": "Light grey"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
+            "clone": [
+                "group_5a01d78928ac6"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
-        false,
         {
             "key": "field_5a01c15e2bcc1",
             "label": "Select form",
@@ -68,5 +63,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516565200
+    "modified": 1516567015
 }

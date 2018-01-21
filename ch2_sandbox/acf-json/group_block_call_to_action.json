@@ -21,10 +21,10 @@
         },
         {
             "key": "field_5a01d28adbacb",
-            "label": "Default background (optional)",
+            "label": "Default Background",
             "name": "default_background",
-            "type": "select",
-            "instructions": "By default, before any styles, accent colors or backgrounds are applied all blocks are either light grey or white. This can be very useful by making multiple blocks visually act as one by assigning them the same background style.",
+            "type": "clone",
+            "instructions": "By default, before any styles or backgrounds are applied all blocks are either light grey or white. This can be very useful by making multiple blocks visually act as one by assigning them the same background style.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -32,19 +32,14 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "1": "White",
-                "2": "Light grey"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
+            "clone": [
+                "group_5a01d78928ac6"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
-        false,
         {
             "key": "field_59fb0424002d1",
             "label": "Style",
@@ -171,5 +166,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516565192
+    "modified": 1516567061
 }

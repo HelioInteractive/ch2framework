@@ -18,7 +18,8 @@
             "choices": {
                 "1": "White",
                 "2": "Light gray",
-                "3": "Brand color"
+                "3": "Brand color",
+                "4": "Brand color alt"
             },
             "default_value": [],
             "allow_null": 0,
@@ -51,5 +52,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516566762
+    "modified": 1516567367
 }

@@ -1159,11 +1159,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #7d7d7d; }
+  color: #96d6e0; }
   a:visited {
-    color: #7d7d7d; }
+    color: #95d6e0; }
   a:hover, a:focus, a:active {
-    color: #0101ff; }
+    color: #fcb034; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1418,7 +1418,7 @@ header {
   header .main-navigation a {
     color: #7d7d7d; }
     header .main-navigation a:hover {
-      color: blue; }
+      color: #96d6e0; }
   @media (max-width: 599px) {
     header .main-navigation li {
       width: 100%; } }
@@ -1534,7 +1534,7 @@ header {
   align-items: center;
   justify-content: center; }
   #colophon address {
-    color: blue;
+    color: #96d6e0;
     font-size: .8rem;
     line-height: 1.35;
     font-weight: bold;
@@ -1638,7 +1638,7 @@ Search
 .search-results h2.entry-title a {
   font-size: 1.6rem;
   font-weight: 400;
-  color: blue; }
+  color: #96d6e0; }
 
 .search-results .entry-footer {
   background: #f6f6f6; }
@@ -1697,7 +1697,7 @@ Search
   .post-type-archive-team_member .member .member-photo {
     margin-bottom: 1.8rem; }
   .post-type-archive-team_member .member .name {
-    color: blue;
+    color: #96d6e0;
     font-size: 1.3rem; }
   .post-type-archive-team_member .member .role {
     color: #7d7d7d;
@@ -1749,7 +1749,7 @@ Search
   .post-type-archive-team_member .bod .board-member, .post-type-archive-team_member .bod .bod-divider, .post-type-archive-team_member .bod .role {
     font-size: 1.3rem; }
   .post-type-archive-team_member .bod .board-member, .post-type-archive-team_member .bod .bod-divider {
-    color: blue; }
+    color: #96d6e0; }
   .post-type-archive-team_member .bod .role {
     color: #7d7d7d; }
   .post-type-archive-team_member .bod .organization {
@@ -1782,7 +1782,7 @@ ul.tribe-events-sub-nav a:hover,
 h1.tribe-events-single-event-title,
 h3.tribe-events-single-section-title,
 dd.tribe-venue {
-  color: blue;
+  color: #96d6e0;
   font-weight: 400; }
 
 h1.tribe-events-single-event-title {
@@ -1790,7 +1790,7 @@ h1.tribe-events-single-event-title {
 
 h2 .tribe-event-date-start,
 h2 .tribe-event-time {
-  color: blue;
+  color: #96d6e0;
   font-size: 1rem; }
 
 h3.tribe-events-single-section-title {
@@ -1817,7 +1817,7 @@ h3.tribe-events-single-section-title {
   padding-top: 2.25rem; }
 
 .tribe-events-calendar thead th {
-  background-color: blue;
+  background-color: #96d6e0;
   font-size: .64rem; }
 
 #tribe-events .tribe-events-button,
@@ -1830,7 +1830,7 @@ h3.tribe-events-single-section-title {
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
 .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a,
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
-  background-color: blue;
+  background-color: #96d6e0;
   border-radius: 0;
   font-size: .6rem; }
 
@@ -1956,7 +1956,10 @@ object {
   background: #f6f6f6; }
 
 .block.default-3 {
-  background: blue; }
+  background: #96d6e0; }
+
+.block.default-4 {
+  background: #fcb033; }
 
 .block {
   padding: 3rem 0 4rem; }
@@ -2347,11 +2350,11 @@ object {
   .block.form .gform_wrapper .gform_footer input[type=submit],
   .block.form .gform_wrapper .gform_page_footer input.button,
   .block.form .gform_wrapper .gform_page_footer input[type=submit] {
-    background: blue;
+    background: #96d6e0;
     color: #fff;
     border-radius: 10px;
     padding: 10px 30px;
-    border: 2px solid blue;
+    border: 2px solid #96d6e0;
     font-size: .8rem;
     margin-top: 1rem; }
     .block.form .gform_wrapper .gform_footer input.button:hover,
@@ -2359,7 +2362,7 @@ object {
     .block.form .gform_wrapper .gform_page_footer input.button:hover,
     .block.form .gform_wrapper .gform_page_footer input[type=submit]:hover {
       background: #fff;
-      color: blue; }
+      color: #96d6e0; }
   .block.form .gform_wrapper select {
     color: #7d7d7d; }
 
