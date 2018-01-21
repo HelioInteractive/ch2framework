@@ -23,35 +23,7 @@
             "prefix_label": 0,
             "prefix_name": 0
         },
-        {
-            "key": "field_59fb146874c26",
-            "label": "Accent color",
-            "name": "accent_color",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "green": "green",
-                "orange": "orange",
-                "purple": "purple",
-                "yellow": "yellow"
-            },
-            "default_value": [
-                "orange"
-            ],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
-        },
+        false,
         {
             "key": "field_59fb147674c27",
             "label": "Heading",
@@ -177,5 +149,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516564040
+    "modified": 1516565230
 }

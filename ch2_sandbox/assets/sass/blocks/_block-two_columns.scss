@@ -1,10 +1,5 @@
 .block.two_columns {
-	.outer-block-wrapper {
-		@extend .container
-	}
-	.inner-block-wrapper {
-		@extend .row;
-	}
+	
 	/*content here*/
 	.two_columns--content {
 		@extend .col-md-12;
@@ -21,18 +16,7 @@
 	h3 {
 		margin-top: -15px;
 	}
-	&.accent-green h3 {
-		color: $color__green;
-	}
-	&.accent-orange h3 {
-		color: $color__orange;
-	}
-	&.accent-purple h3 {
-		color: $color__purple;
-	}
-	&.accent-yellow h3 {
-		color: $color__yellow;
-	}
+	
 	ul, ol {
 		margin: 0 0 1.5rem -.5rem;
 	}

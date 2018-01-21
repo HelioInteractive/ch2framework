@@ -20,19 +20,3 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
-
-.accent-orange .button {
-	@include button($color__orange);
-}
-
-.accent-green .button {
-	@include button($color__green);
-}
-
-.accent-yellow .button {
-	@include button($color__yellow);
-}
-
-.accent-purple .button {
-	@include button($color__purple);
-}

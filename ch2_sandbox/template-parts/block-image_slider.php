@@ -15,7 +15,7 @@ wp_enqueue_style( 'slick-css-theme', get_template_directory_uri() . '/assets/sas
 ?>
 
 <section
-        class="block image_slider default-<?php the_sub_field( 'default_background' ); ?> accent-<?php the_sub_field( 'slider_accent_color' ); ?>">
+        class="block image_slider default-<?php the_sub_field( 'default_background' ); ?>">
     <div class="outer-block-wrapper"> <!-- extend with needed container -->
         <div class="inner-block-wrapper"> <!-- probably extend with row or -->
             <!-- Stuff goes here -->

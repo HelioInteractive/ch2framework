@@ -1,7 +1,7 @@
 .block.three_circles {
 
 	&.style-1 {
-		//Accent color background, white elements
+		//white elements
 		.three_circles--title {
 			color: white;
 		}
@@ -23,30 +23,7 @@
 			font-weight: bold;
 			text-shadow: 0 0 50px rgba(0, 0, 0, .33);
 		}
-		&.accent-orange {
-			background-color: $color__orange;
-			.button {
-				@include button-alt($color__orange)
-			}
-		}
-		&.accent-purple {
-			background-color: $color__purple;
-			.button {
-				@include button-alt($color__purple)
-			}
-		}
-		&.accent-yellow {
-			background-color: $color__yellow;
-			.button {
-				@include button-alt($color__yellow)
-			}
-		}
-		&.accent-green {
-			background-color: lighten($color__green, 10%);
-			.button {
-				@include button-alt(lighten($color__green, 10%))
-			}
-		}
+		
 		.button.button.button {
 			color: black;
 			border-color: white;
@@ -56,76 +33,10 @@
 		}
 	}
 	&.style-2 {
-		//Plain background, accent color elements
-		&.accent-purple {
-			$accent: $color__purple;
-			.three_circles--title {
-				color: $accent;
-			}
-			.circle-link:hover p {
-				color: $accent;
-			}
-			.button {
-				@include button($accent);
-			}
-		}
-		&.accent-purple {
-			$accent: $color__purple;
-			.three_circles--title {
-				color: $accent;
-			}
-			.circle-link:hover p {
-				color: $accent;
-			}
-			.button {
-				@include button($accent);
-			}
-		}
-		&.accent-green {
-			$accent: $color__green;
-			.three_circles--title {
-				color: $accent;
-			}
-			.circle-link:hover p {
-				color: $accent;
-			}
-			.button {
-				@include button($accent);
-			}
-		}
-		&.accent-yellow {
-			$accent: $color__yellow;
-			.three_circles--title {
-				color: $accent;
-			}
-			.circle-link:hover p {
-				color: $accent;
-			}
-			.button {
-				@include button($accent);
-			}
-		}
-		&.accent-orange {
-			$accent: $color__orange;
-			.three_circles--title {
-				color: $accent;
-			}
-			.circle-link:hover p {
-				color: $accent;
-			}
-			.button {
-				@include button($accent);
-			}
-		}
+		//Plain background
 
 	}
 
-	.outer-block-wrapper {
-		@extend .container
-	}
-	.inner-block-wrapper {
-		@extend .row;
-	}
 	/*content here*/
 	.three_circles--content {
 		@extend .col-md-12;
@@ -170,12 +81,6 @@
 	}
 	.circle-link:hover img {
 		box-shadow: 0 0 10px 0 rgba(125, 125, 125, .5);
-	}
-	&.accent-orange,
-	&.accent-purple {
-		.circle-link:hover img {
-			box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
-		}
 	}
 	.copy {
 		text-align: center;

@@ -1,12 +1,7 @@
 .block.logo_block {
 	//leo: this seems liek a TON of padding, i could be wrong. either way lets set the block padding once in the blocks globalss area
 	text-align: center;
-	.outer-block-wrapper {
-		@extend .container
-	}
-	.inner-block-wrapper {
-		@extend .row;
-	}
+
 	/*content here*/
 	.logo_block--content {
 		@extend .col-md-12;

@@ -5,7 +5,7 @@
         */
         ?>
 <section
-        class="block two_columns default-<?php the_sub_field( 'default_background' ); ?> accent-<?php the_sub_field( 'accent_color' ); ?>">
+        class="block two_columns default-<?php the_sub_field( 'default_background' ); ?>">
     <div class="outer-block-wrapper"> <!-- extend with needed container -->
         <div class="inner-block-wrapper"> <!-- extended with .row -->
             <!-- Stuff goes here -->

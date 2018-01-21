@@ -7,7 +7,7 @@
 $background_image = get_sub_field( 'background_image' );
 $background       = $background_image['url']; ?>
 <section
-        class="block billboard style-<?php the_sub_field( 'style' ); ?> accent-<?php the_sub_field( 'accent_color' ); ?>"
+        class="block billboard style-<?php the_sub_field( 'style' ); ?>"
         style="background-image: url('<?php echo $background; ?>'); background-position: <?php the_sub_field( 'focus' ); ?>;">
 	<?php if ( get_sub_field( 'style' ) == '3' ): ?>
       <div class="filter"></div>

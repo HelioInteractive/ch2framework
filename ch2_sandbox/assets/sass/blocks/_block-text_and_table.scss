@@ -1,30 +1,5 @@
 .block.text_and_table {
-	&.accent-green {
-		h3, th {
-			color: $color__green;
-		}
-	}
-	&.accent-orange {
-		h3, th {
-			color: $color__orange;
-		}
-	}
-	&.accent-purple {
-		h3, th {
-			color: $color__purple;
-		}
-	}
-	&.accent-yellow {
-		h3, th {
-			color: $color__yellow;
-		}
-	}
-	.outer-block-wrapper {
-		@extend .container
-	}
-	.inner-block-wrapper {
-		@extend .row;
-	}
+
 	/*content here*/
 	.text_and_table--content .intro {
 		@extend .col-md-12;

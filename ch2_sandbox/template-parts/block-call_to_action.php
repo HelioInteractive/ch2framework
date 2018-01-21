@@ -4,7 +4,7 @@
  */
 ?>
 <section
-        class="block call_to_action default-<?php the_sub_field( 'default_background' ); ?>  style-<?php the_sub_field( 'style' ); ?> accent-<?php the_sub_field( 'accent_color' ); ?>">
+        class="block call_to_action default-<?php the_sub_field( 'default_background' ); ?>  style-<?php the_sub_field( 'style' ); ?> ">
     <div class="outer-block-wrapper"> <!-- extend with needed container -->
         <div class="inner-block-wrapper"> <!-- probably extend with row or -->
             <!-- Stuff goes here -->

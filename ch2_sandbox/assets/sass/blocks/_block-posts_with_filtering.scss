@@ -1,25 +1,11 @@
 .block.posts_with_filtering {
-  .outer-block-wrapper {
-	@extend .container
-  }
-  .inner-block-wrapper {
-	@extend .row;
-  }
   /*content here*/
   article {
 	  @extend .col-md-4;
   }
   &.default-1,
   &.default-2 {
-	  &.accent-green h3 {
-		color: $color__green;
-	  }
-	  &.accent-purple h3 {
-		color: $color__purple;
-	  }
-	  &.accent-yellow h3 {
-		color: $color__yellow;
-	  }
+	  
   }
   
   

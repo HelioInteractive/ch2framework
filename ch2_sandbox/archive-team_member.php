@@ -16,7 +16,7 @@ get_header(); ?>
 					$background_image = $background['url'];
 					?>
             <section
-                    class="block billboard style-<?php the_field( 'style', 'cpt_team_member' ); ?> accent-<?php the_field( 'accent_color', 'cpt_team_member' ); ?>"
+                    class="block billboard style-<?php the_field( 'style', 'cpt_team_member' ); ?>"
                     style="background-image: url('<?php echo $background_image; ?>'); background-position: <?php the_field( 'focus', 'cpt_team_member' ); ?>;">
                 <div class="outer-block-wrapper"> <!-- extend with needed container -->
                     <div class="inner-block-wrapper"> <!-- probably extend with row or -->
@@ -44,7 +44,7 @@ get_header(); ?>
             </section>
 
             <section
-                    class="block general_copy default-<?php the_field( 'default_background', 'cpt_team_member' ); ?> accent-<?php //the_field( 'accent_color', 'cpt_team_member' ); ?>">
+                    class="block general_copy default-<?php the_field( 'default_background', 'cpt_team_member' ); ?>">
                 <div class="outer-block-wrapper"> <!-- extend with needed container -->
                     <div class="inner-block-wrapper"> <!-- probably extend with row or -->
                         <!-- Stuff goes here -->

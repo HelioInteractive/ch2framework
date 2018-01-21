@@ -22,7 +22,7 @@ wp_enqueue_script( 'match-height', get_template_directory_uri() . '/assets/js/jq
                       <div class="cta-image" style="background-image: url('<?php echo $background_image['url']; ?>');">
 
                       </div>
-                      <div class="cta-block accent-<?php the_sub_field( 'accent_color' ); ?>">
+                      <div class="cta-block">
 
                           <h2><?php the_sub_field( 'cta_heading' ); ?></h2>
                           <a class='button'

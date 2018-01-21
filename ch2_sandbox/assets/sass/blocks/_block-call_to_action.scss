@@ -1,55 +1,10 @@
 .block.call_to_action {
 	&.style-1 {
-		&.accent-green {
-			$accent: $color__green;
-			background-color: $accent;
-			color: white;
-			.call_to_action--title {
-				color: white;
-			}
-			.button {
-				@include button-alt($accent);
-			}
-		}
-		&.accent-orange {
-			$accent: $color__orange;
-			background-color: $accent;
-			color: white;
-			.call_to_action--title {
-				color: white;
-			}
-			.button {
-				@include button-alt($accent);
-			}
-		}
-		&.accent-purple {
-			$accent: $color__purple;
-			background-color: $accent;
-			color: white;
-			.call_to_action--title {
-				color: white;
-			}
-			.button {
-				@include button-alt($accent);
-			}
-		}
-		&.accent-yellow {
-			$accent: $color__yellow;
-			background-color: $accent;
-			color: white;
-			.call_to_action--title {
-				color: white;
-			}
-			.button {
-				@include button-alt($accent);
-			}
-		}
+		
 	}
 	.outer-block-wrapper {
-		@extend .container
 	}
 	.inner-block-wrapper {
-		@extend .row;
 		text-align: center;
 		h3 {
 			color: $color__grey;
