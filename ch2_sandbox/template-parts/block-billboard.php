@@ -22,7 +22,7 @@ $background       = $background_image['url']; ?>
 				<?php endif; ?>
 
 				<?php if ( get_sub_field( 'button_link' ) ): ?>
-                	<a class="button" href="<?php the_sub_field( 'button_link' ); ?>"> <?php the_sub_field( 'button_text' ); ?></a>
+                	<a class="btn-default" href="<?php the_sub_field( 'button_link' ); ?>"> <?php the_sub_field( 'button_text' ); ?></a>
 				<?php endif; ?>
             </div>
         </div>

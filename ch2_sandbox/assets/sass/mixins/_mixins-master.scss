@@ -84,7 +84,7 @@ $white: #fff;
 /* Map button styles
  each of these styles will produce a predictable button colored based on the variables above. e.g.:
 
- .btn-style-default will produce a solid purple button while .btn-style-default-o will produce a ghost button. additional styles can be added easily below e.g. black: $black would allow for button .btn-style-black that would always use black for its color..
+ .btn-style-default will produce a solid purple button while .btn-default-o will produce a ghost button. additional styles can be added easily below e.g. black: $black would allow for button .btn-black that would always use black for its color..
  */
 $buttons: (
 		default: $default,
@@ -93,15 +93,17 @@ $buttons: (
 		danger: $danger
 );
 
-.btn {
+[class^="btn"], [class^="button"], button {
 	padding: 6px 12px; //change to REM to match typography
 	transition: all 120ms ease;
 	border-radius: 1px;
 	/* Button reset */
 	background-color: transparent;
+	color: $black;
 	border: 1px solid rgba(0,0,0,0.25);
 	&:hover {
 		border-color: rgba(0,0,0,0.5);
+		text-decoration: none;
 	}
 }
 
@@ -127,10 +129,10 @@ $buttons: (
 }
 
 @each $key, $value in $buttons {
-	.btn-#{$key} {
+	.btn-#{$key}, .button-#{$key},  {
 		@include btn-style($value, false);
 	}
-	.btn-#{$key}-o {
+	.btn-#{$key}-o, .button-#{$key}-o {
 		@include btn-style($value, true);
 	}
 }

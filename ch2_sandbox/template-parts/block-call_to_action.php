@@ -20,7 +20,7 @@
 							<?php endif; ?>
 
 							<?php if ( get_sub_field( 'button_link' ) ): ?>
-                  <a class="button"
+                  <a class="btn-default-o"
                      href="<?php the_sub_field( 'button_link' ); ?>"> <?php the_sub_field( 'button_text' ); ?></a>
 							<?php endif; ?>
 
