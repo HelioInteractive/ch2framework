@@ -57,47 +57,80 @@ color 1 will determine ALL the colors, color 2 overrides outside colors, color 3
 	}
 }
 
-@mixin button($color) {
-	border-radius: .5em;
 
-	background-color: $color;
-	color: white;
-	padding: .4em 1.2em;
-	font-size: .8em;
-	text-decoration: none;
-	transition: all .6666s;
-	&:hover {
-		text-decoration: none;
-		background-color: lighten($color, 7.5%);
-
-	}
-}
-
-@mixin button-alt($color) {
-
-	border-radius: .5em;
-	background-color: white;
-	color: $color;
-	padding: calc(.4em - 2px) calc(1.2em - 2px);
-	border: 2px solid white;
-	font-size: .8em;
-	text-decoration: none;
-
-	transition: all .6666s;
-	&:hover {
-
-		padding: calc(.4em - 2px) calc(1.2em - 2px);
-		text-decoration: none;
-		background-color: $color;
-		color: white;
-		border: 2px solid white;
-	}
-}
 
 /*
 This mixin helps with fonts that could potentially get TOO small while scaling off of the general design.
  */
-@mixin smallFont($fullSize) {
+@mixin small-font($fullSize) {
 	font-size: calc(12px + (#{$fullSize} - 12) * (100vw - 350px) / (1300 - 350));
 }
 
+
+/*
+Buttons Mixins
+
+*/
+
+
+/* Variables */
+$default: #663399;
+$success: #7fff00;
+$warning: #ffa500;
+$danger: #b22222;
+$black: #222;
+$white: #fff;
+
+/* Map button styles
+ each of these styles will produce a predictable button colored based on the variables above. e.g.:
+
+ .btn-style-default will produce a solid purple button while .btn-style-default-o will produce a ghost button. additional styles can be added easily below e.g. black: $black would allow for button .btn-style-black that would always use black for its color..
+ */
+$buttons: (
+		default: $default,
+		success: $success,
+		warning: $warning,
+		danger: $danger
+);
+
+.btn {
+	padding: 6px 12px; //change to REM to match typography
+	transition: all 120ms ease;
+	border-radius: 1px;
+	/* Button reset */
+	background-color: transparent;
+	border: 1px solid rgba(0,0,0,0.25);
+	&:hover {
+		border-color: rgba(0,0,0,0.5);
+	}
+}
+
+@mixin btn-style($color, $ghost) {
+	@if $ghost {
+		background-color: transparent;
+		color: $color;
+	} @else {
+		background-color: $color;
+		color: #fff;
+	}
+	border-color: $color;
+	&:hover {
+		@if $ghost {
+			background-color: $color;
+			border-color: $color;
+		} @else {
+			background-color: darken($color, 5%);
+			border-color: darken($color, 5%);
+		}
+		color: $white;
+	}
+}
+
+@each $key, $value in $buttons {
+	.btn-#{$key} {
+		@include btn-style($value, false);
+	}
+	.btn-#{$key}-o {
+		@include btn-style($value, true);
+	}
+}
