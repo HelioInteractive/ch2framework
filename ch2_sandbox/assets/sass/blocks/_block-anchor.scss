@@ -1,15 +1,7 @@
 .block.anchor {
-  .outer-block-wrapper {
-	@extend .container
-  }
-  .inner-block-wrapper {
-	@extend .row;
-  }
-  /*content here*/
-  
-  
-  
-  
-  
+	visibility: hidden;
+	z-index: 0;
+	position: relative;
+	top: -100px;
 }
 			
