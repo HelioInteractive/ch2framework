@@ -1,0 +1,48 @@
+{
+    "key": "group_block_anchor",
+    "title": "Block - Anchor",
+    "fields": [
+        {
+            "key": "field_5a6693c4147df",
+            "label": "Hidden block",
+            "name": "Anchor name",
+            "type": "text",
+            "instructions": "These anchor blocks provide an easy target for in page links. to link to these, use the custom links in the Appearance > menus section and use a link such as \"#section\" matching the text on this field. Avoid using spaces or special characters other than hyphens. e.g. #this-place is the link as the field says this-place.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "acftc-group-0",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1516671983
+}
