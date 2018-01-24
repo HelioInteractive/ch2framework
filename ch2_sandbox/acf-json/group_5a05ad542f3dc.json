@@ -1,5 +1,5 @@
 {
-    "key": "group_global_options",
+    "key": "group_5a05ad542f3dc",
     "title": "Option - Globals",
     "fields": [
         {
@@ -19,43 +19,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5a452935b17f4",
-            "label": "Top Bar Link (left)",
-            "name": "top_link",
-            "type": "link",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
-            "key": "field_5a61152202439",
-            "label": "Top Bar Text (right)",
-            "name": "top_text",
-            "type": "link",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        },
-        {
             "key": "field_5a05ad65a6597",
             "label": "Site logo",
             "name": "site_logo",
             "type": "image",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -92,12 +59,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_5a05c1022fb63",
-            "label": "Privacy Policy",
-            "name": "privacy_policy",
-            "type": "page_link",
-            "value": null,
-            "instructions": "The page that should be linked to in the footer.",
+            "key": "field_5a43fd5da0426",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "type": "image",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -105,18 +71,57 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 0,
-            "multiple": 0
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5a61119aff632",
+            "label": "Footer text",
+            "name": "footer_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a67d92854518",
+            "label": "Misc",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_5a05add8a659a",
             "label": "Social links",
             "name": "social_links",
             "type": "repeater",
-            "value": null,
             "instructions": "These appear in the footer",
             "required": 0,
             "conditional_logic": 0,
@@ -136,7 +141,6 @@
                     "label": "link",
                     "name": "link",
                     "type": "text",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -156,7 +160,6 @@
                     "label": "Icon",
                     "name": "icon",
                     "type": "font-awesome",
-                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -851,131 +854,6 @@
                     }
                 }
             ]
-        },
-        {
-            "key": "field_5a43fd5da0426",
-            "label": "Footer Logo",
-            "name": "footer_logo",
-            "type": "image",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5a61119aff632",
-            "label": "Footer text",
-            "name": "footer_text",
-            "type": "text",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a6111a7a1659",
-            "label": "Part number",
-            "name": "part_number",
-            "type": "text",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a61149ff7d94",
-            "label": "Address",
-            "name": "address_1",
-            "type": "text",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a6114b3f7d95",
-            "label": "Address line 2",
-            "name": "address_line_2",
-            "type": "text",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a6114bef7d96",
-            "label": "Phone Number",
-            "name": "phone_number",
-            "type": "text",
-            "value": null,
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -995,5 +873,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516311863
+    "modified": 1516755273
 }
