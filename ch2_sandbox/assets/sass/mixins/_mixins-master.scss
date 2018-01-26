@@ -93,7 +93,7 @@ $buttons: (
 		danger: $danger
 );
 
-[class^="btn"], [class^="button"], button {
+[class^="btn"], button {
 	padding: 6px 12px; //change to REM to match typography
 	transition: all 120ms ease;
 	border-radius: 1px;
