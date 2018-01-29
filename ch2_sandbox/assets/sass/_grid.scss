@@ -773,6 +773,7 @@ $width-scale: .975;
 .row:after {
 	content: " ";
 	display: table;
+	width: 0; /* SAFARI FIX */
 }
 
 .clearfix:after,
