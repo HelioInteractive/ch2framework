@@ -74,12 +74,12 @@ Buttons Mixins
 
 
 /* Variables */
-$default: #663399;
+$default: $color__brand;
 $success: #7fff00;
 $warning: #ffa500;
 $danger: #b22222;
-$black: #222;
-$white: #fff;
+$black: $color__black;
+$white: $color__white;
 
 /* Map button styles
  each of these styles will produce a predictable button colored based on the variables above. e.g.:

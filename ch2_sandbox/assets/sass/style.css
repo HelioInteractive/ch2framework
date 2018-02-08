@@ -65,28 +65,28 @@ Buttons Mixins
   border-radius: 1px;
   /* Button reset */
   background-color: transparent;
-  color: #222;
+  color: #262626;
   border: 1px solid rgba(0, 0, 0, 0.25); }
   [class^="btn"]:hover, button:hover {
     border-color: rgba(0, 0, 0, 0.5);
     text-decoration: none; }
 
 .btn-default, .button-default {
-  background-color: #663399;
+  background-color: #96d6e0;
   color: #fff;
-  border-color: #663399; }
+  border-color: #96d6e0; }
   .btn-default:hover, .button-default:hover {
-    background-color: #592d86;
-    border-color: #592d86;
+    background-color: #82ceda;
+    border-color: #82ceda;
     color: #fff; }
 
 .btn-default-o, .button-default-o {
   background-color: transparent;
-  color: #663399;
-  border-color: #663399; }
+  color: #96d6e0;
+  border-color: #96d6e0; }
   .btn-default-o:hover, .button-default-o:hover {
-    background-color: #663399;
-    border-color: #663399;
+    background-color: #96d6e0;
+    border-color: #96d6e0;
     color: #fff; }
 
 .btn-success, .button-success {
