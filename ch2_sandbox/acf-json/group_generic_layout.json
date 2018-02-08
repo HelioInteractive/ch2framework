@@ -129,7 +129,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_block_call_to_action"
+                                "group_block_callout"
                             ],
                             "display": "seamless",
                             "layout": "block",
