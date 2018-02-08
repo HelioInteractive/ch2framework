@@ -16,16 +16,36 @@ get_header(); ?>
 		if ( have_posts() ) :
 			$background = get_the_post_thumbnail_url( get_option('page_for_posts', true), 'full' );
 			?>
-			<header class="page-header block hero" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
-				<div class="filter"></div>
-				<div class="outer-block-wrapper"> <!-- extend with needed container -->
-					<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-						<h1 class="page-title hero--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
-					</div>
-				</div>
-			</header><!-- .page-header -->
+			<section class="block hero" style="background-image: url('<?php echo $background; ?>'); background-position: <?php the_sub_field( 'focus' ); ?>;">
+    
+			    <div class="filter"></div>
+			
+			    <div class="outer-block-wrapper">
+			        <div class="inner-block-wrapper">
+			
+			            <div class="hero--content">
+			
+							<?php if ( get_field( 'heading', get_option('page_for_posts', true) ) ) { ?>
+								<h1 class="hero--title"><?php the_field( 'heading', get_option('page_for_posts', true) ); ?></h1>
+							<?php } else { ?>
+								<h1 class="hero--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
+							<?php } ?>
+							
+							<?php if ( get_field( 'copy', get_option('page_for_posts', true) ) ): ?>
+			                	<div class="copy"> <?php the_field( 'copy', get_option('page_for_posts', true) ); ?></div>
+							<?php endif; ?>
+			
+							<?php if ( get_field( 'button_link', get_option('page_for_posts', true) ) ): ?>
+			                	<a class="btn-default" href="<?php the_field( 'button_link', get_option('page_for_posts', true) ); ?>"> <?php the_field( 'button_text', get_option('page_for_posts', true) ); ?></a>
+							<?php endif; ?>
+							
+			            </div>
+			        </div>
+			    </div>
+			    
+			</section>
 
-			<div class="block posts-container">
+			<section class="block posts-container">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -39,7 +59,7 @@ get_header(); ?>
 
 			endwhile;
 			?>
-			</div>
+			</section>
 			
 			<?php
 			the_posts_navigation();

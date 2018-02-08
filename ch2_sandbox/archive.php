@@ -20,7 +20,12 @@ get_header(); ?>
 				<div class="filter"></div>
 				<div class="outer-block-wrapper"> <!-- extend with needed container -->
 					<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-						<h1 class="page-title hero--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
+						<?php if ( get_field( 'heading', get_option('page_for_posts', true) ) ) { ?>
+							<h1 class="hero--title"><?php the_field( 'heading', get_option('page_for_posts', true) ); ?></h1>
+						<?php } else { ?>
+							<h1 class="hero--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
+						<?php } ?>
+							
 						<?php the_archive_title( '<p class="">', '</p>' ); ?>
 					</div>
 				</div>
