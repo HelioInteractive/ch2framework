@@ -1,0 +1,22 @@
+#tinymce a.btn,
+#tinymce button {
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    transition: all 120ms ease;
+    border-radius: 1px;
+    background-color: transparent;
+    color: #262626;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+#tinymce a.btn-default,
+#tinymce a.button-default {
+    background-color: #96d6e0;
+    color: #fff;
+    border-color: #96d6e0;
+}
+#tinymce a.btn-default-o,
+#tinymce a.button-default-o {
+    background-color: transparent;
+    color: #96d6e0;
+    border-color: #96d6e0;
+}
