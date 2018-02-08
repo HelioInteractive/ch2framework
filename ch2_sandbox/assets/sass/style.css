@@ -1908,6 +1908,7 @@ object {
 .block.hero {
   padding: 0;
   background-size: cover;
+  background-position: center center;
   position: relative;
   min-height: 100px;
   height: calc(100vh - 6.3rem);
