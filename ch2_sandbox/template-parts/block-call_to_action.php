@@ -4,8 +4,11 @@
  */
 ?>
 <section
-        class="block call_to_action default-<?php the_sub_field( 'default_background' ); ?>  style-<?php the_sub_field( 'style' ); ?> ">
-    <div class="outer-block-wrapper"> <!-- extend with needed container -->
+    class="block call_to_action default-<?php the_sub_field( 'default_background' ); ?> style-<?php the_sub_field( 'style' ); ?>"
+    <?php if ( get_sub_field( 'image' ) ) { ?>
+	    style="background-image: url('<?php echo $background; ?>');"
+	<?php } ?>
+>    <div class="outer-block-wrapper"> <!-- extend with needed container -->
         <div class="inner-block-wrapper"> <!-- probably extend with row or -->
             <!-- Stuff goes here -->
             <div class="call_to_action--content">
