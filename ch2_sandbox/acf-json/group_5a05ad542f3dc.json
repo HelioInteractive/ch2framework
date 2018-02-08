@@ -84,9 +84,9 @@
         },
         {
             "key": "field_5a61119aff632",
-            "label": "Footer text",
-            "name": "footer_text",
-            "type": "text",
+            "label": "Main Address",
+            "name": "main_address",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -97,9 +97,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         },
         {
             "key": "field_5a67d92854518",
@@ -172,7 +172,7 @@
                     "save_format": "element",
                     "allow_null": 0,
                     "show_preview": 1,
-                    "enqueue_fa": 0,
+                    "enqueue_fa": 1,
                     "fa_live_preview": "",
                     "choices": {
                         "": "",
@@ -873,5 +873,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516755273
+    "modified": 1518126640
 }

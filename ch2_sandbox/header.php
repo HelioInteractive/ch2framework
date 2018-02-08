@@ -47,19 +47,7 @@
                     <div class="search-box not-toggled"><?php get_search_form(); ?>
                         <button class="search-toggle"></button>
                     </div>
-									<?php if ( have_rows( 'social_links', 'option' ) ) : ?>
-                      <div class="social">
-												<?php while ( have_rows( 'social_links', 'option' ) ) : the_row(); ?>
-                            <a class="header-social-link" target="_blank" href="
-			                    <?php the_sub_field( 'link' ); ?>"> <?php $icon = get_sub_field( 'icon' ); ?>
-															<?php if ( $icon ) { ?>
-                                  <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>"/>
-															<?php } ?></a>
 
-												<?php endwhile; ?>
-                      </div>
-
-									<?php endif; ?>
                 </div>
 
                 <nav id="site-navigation" class=" main-navigation" role="navigation">

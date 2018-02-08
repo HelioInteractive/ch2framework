@@ -16,7 +16,22 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="outer-block-wrapper">
         <div class="inner-block-wrapper">
+			
+			<?php $footer_logo = get_field( 'footer_logo', 'option' ); ?>
+			<?php if ( $footer_logo ) { ?>
+				<div class="site-branding">
+					<img src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>" />
+				</div>
+			<?php } ?>
 
+			<?php if ( have_rows( 'social_links', 'option' ) ) : ?>
+			<div class="social-links">
+				<?php while ( have_rows( 'social_links', 'option' ) ) : the_row(); ?>
+					<a href="<?php the_sub_field( 'link', 'option' ); ?>" target="_blank"><?php the_sub_field( 'icon', 'option' ); ?></a>
+				<?php endwhile; ?>
+			</div>
+			<?php endif; ?>
+									
 			<?php if ( get_field( 'main_address', 'option' ) ): ?>
               <address>
 				<?php the_field( 'main_address', 'option' ); ?>
@@ -26,6 +41,7 @@
             <nav id="footer-navigation" class="footer-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_id' => 'footer-menu' ) ); ?>
             </nav><!-- #site-navigation -->
+            
             <div class="site-info">
                 &copy;<?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
                 <span class="sep"> | </span>All Rights Reserved<span class="sep"> | </span><a
