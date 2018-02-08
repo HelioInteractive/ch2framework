@@ -16,17 +16,17 @@ get_header(); ?>
 					$background_image = $background['url'];
 					?>
             <section
-                    class="block billboard style-<?php the_field( 'style', 'cpt_team_member' ); ?>"
+                    class="block hero style-<?php the_field( 'style', 'cpt_team_member' ); ?>"
                     style="background-image: url('<?php echo $background_image; ?>'); background-position: <?php the_field( 'focus', 'cpt_team_member' ); ?>;">
                 <div class="outer-block-wrapper"> <!-- extend with needed container -->
                     <div class="inner-block-wrapper"> <!-- probably extend with row or -->
                         <!-- Stuff goes here -->
 
 											<?php if ( get_field( 'heading', 'cpt_team_member' ) ): ?>
-                          <div class="billboard--title"><h3><?php the_field( 'heading', 'cpt_team_member' ); ?></h3>
+                          <div class="hero--title"><h3><?php the_field( 'heading', 'cpt_team_member' ); ?></h3>
                           </div>
 											<?php endif; ?>
-                        <div class="billboard--content">
+                        <div class="hero--content">
 
 
 													<?php if ( get_field( 'quote_text', 'cpt_team_member' ) ): ?>

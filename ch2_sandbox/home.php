@@ -16,11 +16,11 @@ get_header(); ?>
 		if ( have_posts() ) :
 			$background = get_the_post_thumbnail_url( get_option('page_for_posts', true), 'full' );
 			?>
-			<header class="page-header block billboard" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+			<header class="page-header block hero" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
 				<div class="filter"></div>
 				<div class="outer-block-wrapper"> <!-- extend with needed container -->
 					<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-						<h1 class="page-title billboard--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
+						<h1 class="page-title hero--title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
 					</div>
 				</div>
 			</header><!-- .page-header -->

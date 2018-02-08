@@ -11,12 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php $background = get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>
-	<header class="entry-header block billboard" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+	<header class="entry-header block hero" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
 		<div class="filter"></div>
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
 			<div class="inner-block-wrapper"> <!-- probably extend with row or -->
-				<div class="billboard--content">
-					<?php the_title( '<h1 class="billboard--title entry-title">', '</h1>' ); 
+				<div class="hero--content">
+					<?php the_title( '<h1 class="hero--title entry-title">', '</h1>' ); 
 					?>
 					<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="copy entry-meta">

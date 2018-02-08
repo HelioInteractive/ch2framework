@@ -1,31 +1,7 @@
 {
-    "key": "group_block_billboard",
-    "title": "Block - Billboard",
+    "key": "group_block_hero",
+    "title": "Hero Options",
     "fields": [
-        {
-            "key": "field_59fafe4fec020",
-            "label": "Background Image",
-            "name": "background_image",
-            "type": "image",
-            "instructions": "2000px by 900px",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
         {
             "key": "field_59fafe78ec021",
             "label": "Background focal point",
@@ -62,7 +38,7 @@
         },
         {
             "key": "field_59fafca1ec01f",
-            "label": "Heading",
+            "label": "Heading Override",
             "name": "heading",
             "type": "text",
             "instructions": "",
@@ -142,22 +118,17 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "post"
+                "value": "page"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
-    "style": "acftc-group-0",
+    "position": "acf_after_title",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516575414
+    "modified": 1518115451
 }

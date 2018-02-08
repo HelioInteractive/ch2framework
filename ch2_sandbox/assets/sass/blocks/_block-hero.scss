@@ -1,4 +1,4 @@
-.block.billboard {
+.block.hero {
 	padding: 0;
 	background-size: cover;
 	position: relative;
@@ -28,7 +28,7 @@
 	}
 
 	/*content here*/
-	.billboard--title {
+	.hero--title {
 		color: $color__white;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -37,7 +37,7 @@
 	p {
 		color: $color__white;
 	}
-	.billboard--content {
+	.hero--content {
 		@extend .col-md-12;
 		@media (min-width: $bp_phone) {
 			width: 85%;
