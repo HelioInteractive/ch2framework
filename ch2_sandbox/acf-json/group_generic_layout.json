@@ -111,8 +111,8 @@
                 },
                 "59fafb530c9cb": {
                     "key": "59fafb530c9cb",
-                    "name": "call_to_action",
-                    "label": "Call to action",
+                    "name": "callout",
+                    "label": "Callout",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -323,5 +323,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518111146
+    "modified": 1518113134
 }

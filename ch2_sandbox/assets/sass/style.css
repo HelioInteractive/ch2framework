@@ -481,7 +481,7 @@ template {
 .col > *:last-child, .col .module > *:last-child {
   margin-bottom: 0; }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .block.posts_with_filtering article, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.callout .callout--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0.75rem;
@@ -750,9 +750,9 @@ template {
     margin-left: 0%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .block.posts_with_filtering article, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.callout .callout--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     float: left; }
-  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.call_to_action .call_to_action--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
+  .col-md-12, .error404 .content-wrapper, .search-results .content-wrapper, .block.general_copy .content, .block.billboard .billboard--content, .block.text_and_icons .text_and_icons--content, .block.text_and_icons .icons-wrapper, .block.text_and_table .text_and_table--content .intro, .block.image_slider .image_slider--content, .block.logo_block .logo_block--content, .block.callout .callout--content, .block.two_columns .two_columns--content, .block.form .form--content, .block.three_circles .three_circles--content, .block.posts_with_filtering .content {
     width: 100%; }
   .col-md-11 {
     width: 91.66666667%; }
@@ -1077,7 +1077,7 @@ h2.billboard--title {
       font-size: 4rem; } }
 
 h2,
-h3.call_to_action--title,
+h3.callout--title,
 h3.text_and_icons--title,
 h3.image_slider--title,
 h3.logo_block--title {
@@ -1085,14 +1085,14 @@ h3.logo_block--title {
   font-size: 1rem; }
   @media (min-width: 768px) {
     h2,
-    h3.call_to_action--title,
+    h3.callout--title,
     h3.text_and_icons--title,
     h3.image_slider--title,
     h3.logo_block--title {
       font-size: 1.5rem; } }
   @media (min-width: 992px) {
     h2,
-    h3.call_to_action--title,
+    h3.callout--title,
     h3.text_and_icons--title,
     h3.image_slider--title,
     h3.logo_block--title {
@@ -2067,9 +2067,9 @@ object {
 /*--------------------------------------------------------------
 # Call to action
 --------------------------------------------------------------*/
-.block.call_to_action {
+.block.callout {
   /*content here*/ }
-  .block.call_to_action .inner-block-wrapper {
+  .block.callout .inner-block-wrapper {
     text-align: center; }
 
 /*--------------------------------------------------------------

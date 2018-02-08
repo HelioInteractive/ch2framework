@@ -1,6 +1,6 @@
 {
     "key": "group_block_call_to_action",
-    "title": "Block - Call to action",
+    "title": "Block - Callout",
     "fields": [
         {
             "key": "field_59fb037b002d0",
@@ -166,5 +166,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516567061
+    "modified": 1518113102
 }
