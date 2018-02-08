@@ -16,7 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) :
 			$background = get_the_post_thumbnail_url( get_option('page_for_posts', true), 'full' );
 			?>
-			<section class="block hero height-<?php the_field( 'height' ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+			<section class="block hero height-<?php the_field( 'height', get_option('page_for_posts', true) ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
     
 			    <div class="filter"></div>
 			

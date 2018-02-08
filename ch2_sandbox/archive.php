@@ -16,7 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) :
 			$background = get_the_post_thumbnail_url( get_option('page_for_posts', true), 'full' );
 			?>
-			<header class="page-header block hero height-<?php the_field( 'height' ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+			<header class="page-header block hero height-<?php the_field( 'height', get_option('page_for_posts', true) ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
 				<div class="filter"></div>
 				<div class="outer-block-wrapper"> <!-- extend with needed container -->
 					<div class="inner-block-wrapper"> <!-- probably extend with row or -->
