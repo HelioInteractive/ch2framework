@@ -320,10 +320,8 @@
     "style": "acftc-group-0",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1516564212
+    "modified": 1518111146
 }
