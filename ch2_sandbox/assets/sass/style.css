@@ -1909,13 +1909,20 @@ object {
   padding: 0;
   background-size: cover;
   position: relative;
-  min-height: 500px;
-  height: calc(100vh - 6.3rem);
-  max-height: 800px;
+  min-height: 100px;
+  height: calc(100vh - 20.3rem);
+  max-height: 200px;
   /*content here*/ }
   @media (max-width: 768px) {
     .block.hero {
-      min-height: 500px; } }
+      min-height: 100px; } }
+  .block.hero.height-tall {
+    min-height: 500px;
+    height: calc(100vh - 6.3rem);
+    max-height: 800px; }
+    @media (max-width: 768px) {
+      .block.hero.height-tall {
+        min-height: 500px; } }
   .block.hero .outer-block-wrapper {
     position: absolute;
     top: 0;

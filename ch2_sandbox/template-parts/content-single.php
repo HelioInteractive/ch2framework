@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php $background = get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>
-	<header class="entry-header block hero" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
+	<header class="entry-header block hero height-<?php the_field( 'height' ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
 		<div class="filter"></div>
 		<div class="outer-block-wrapper"> <!-- extend with needed container -->
 			<div class="inner-block-wrapper"> <!-- probably extend with row or -->

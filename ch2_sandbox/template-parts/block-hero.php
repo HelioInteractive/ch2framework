@@ -2,10 +2,10 @@
 /**
  * Template part for displaying a Billboard.
  *
-
+ * TODO: use this for archive.php, home.php, content-single.php and archive-team_member.php - each of those has own variations
  */
 $background = get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>
-<section class="block hero" style="background-image: url('<?php echo $background; ?>'); background-position: <?php the_sub_field( 'focus' ); ?>;">
+<section class="block hero height-<?php the_field( 'height' ); ?>" style="background-color: gray; background-image: url('<?php echo $background; ?>');">
     
     <div class="filter"></div>
 

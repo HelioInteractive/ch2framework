@@ -3,11 +3,11 @@
     "title": "Hero Options",
     "fields": [
         {
-            "key": "field_59fafe78ec021",
-            "label": "Background focal point",
-            "name": "focus",
-            "type": "select",
-            "instructions": "Where is the focal point of this header image?",
+            "key": "field_5a7ca72715279",
+            "label": "Height",
+            "name": "height",
+            "type": "radio",
+            "instructions": "Default is a short header, with room for just a heading. Choose tall header if you'd like room for additional copy and\/or a button.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,25 +16,15 @@
                 "id": ""
             },
             "choices": {
-                "center": "center",
-                "top": "top",
-                "right": "right",
-                "bottom": "bottom",
-                "left": "left",
-                "left top": "left top",
-                "right top": "right top",
-                "left bottom": "left bottom",
-                "right bottom": "right bottom"
+                "short": "Short",
+                "tall": "Tall"
             },
-            "default_value": [
-                "center"
-            ],
-            "allow_null": 1,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "short",
+            "layout": "vertical",
+            "return_format": "value"
         },
         {
             "key": "field_59fafca1ec01f",
@@ -62,7 +52,15 @@
             "type": "textarea",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7ca72715279",
+                        "operator": "==",
+                        "value": "tall"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -81,7 +79,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7ca72715279",
+                        "operator": "==",
+                        "value": "tall"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -100,7 +106,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a7ca72715279",
+                        "operator": "==",
+                        "value": "tall"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -130,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1518115451
+    "modified": 1518118809
 }

@@ -2,11 +2,19 @@
 	padding: 0;
 	background-size: cover;
 	position: relative;
-	min-height: 500px;
-	height: calc(100vh - 6.3rem);
-	max-height: 800px;
+	min-height: 100px;
+	height: calc(100vh - 20.3rem);
+	max-height: 200px;
 	@media (max-width: $bp_phone) {
+		min-height: 100px;
+	}
+	&.height-tall {
 		min-height: 500px;
+		height: calc(100vh - 6.3rem);
+		max-height: 800px;
+		@media (max-width: $bp_phone) {
+			min-height: 500px;
+		}
 	}
 	.outer-block-wrapper {
 		position: absolute;

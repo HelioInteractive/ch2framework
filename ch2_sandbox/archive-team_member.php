@@ -16,8 +16,8 @@ get_header(); ?>
 					$background_image = $background['url'];
 					?>
             <section
-                    class="block hero style-<?php the_field( 'style', 'cpt_team_member' ); ?>"
-                    style="background-image: url('<?php echo $background_image; ?>'); background-position: <?php the_field( 'focus', 'cpt_team_member' ); ?>;">
+                    class="block hero style-<?php the_field( 'style', 'cpt_team_member' ); ?> height-<?php the_field( 'height' ); ?>"
+                    style="background-color: gray; background-image: url('<?php echo $background; ?>');">
                 <div class="outer-block-wrapper"> <!-- extend with needed container -->
                     <div class="inner-block-wrapper"> <!-- probably extend with row or -->
                         <!-- Stuff goes here -->
