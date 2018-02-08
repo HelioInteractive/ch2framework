@@ -537,3 +537,51 @@ function disable_emojis() {
 }
 
 add_action( 'init', 'disable_emojis' );
+
+// Callback function to insert 'styleselect' into the $buttons array
+function ch2_mce_buttons_2( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+// Register our callback to the appropriate filter
+add_filter('mce_buttons_2', 'ch2_mce_buttons_2');
+
+// Callback function to filter the MCE settings
+function ch2_mce_before_init_insert_formats( $init_array ) {  
+	// Define the style_formats array
+	$style_formats = array(  
+		// Each array child is a format with it's own settings
+		array(  
+			'title' => 'default button', 
+			'selector' => 'a', 
+			'classes' => 'btn-default',
+			'wrapper' => false,
+		),
+		array(  
+			'title' => 'ghost button', 
+			'selector' => 'a', 
+			'classes' => 'btn-default-o',
+			'wrapper' => false,
+		),
+	);  
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode( $style_formats );  
+	
+	return $init_array;  
+  
+} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'ch2_mce_before_init_insert_formats' );
+
+// Add custom editor style 
+function ch2_theme_add_editor_styles() {
+    add_editor_style( 'assets/css/editor-style.css' );
+}
+add_action( 'admin_init', 'ch2_theme_add_editor_styles' );
+
+// Customize excerpts
+function ch2_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more...</a>';
+}
+add_filter('excerpt_more', 'ch2_excerpt_more');

@@ -94,7 +94,8 @@ $buttons: (
 );
 
 [class^="btn"], button {
-	padding: 6px 12px; //change to REM to match typography
+	padding: .5rem 1.5rem;
+	display: inline-block;
 	transition: all 120ms ease;
 	border-radius: 1px;
 	/* Button reset */
