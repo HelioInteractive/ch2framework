@@ -9,6 +9,16 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+/* Single property */
+html {
+	@include fluid-type(font-size, 400px, 1600px, 16px, 20px);
+}
+
+/* Multiple properties with same values */
+
+
+
+
 @import "headings";
 
 @import "copy";
