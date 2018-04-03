@@ -6,12 +6,12 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	//@include font-size(1);
-	line-height: $font__line-height-body;
+	@include fluid-type(line-height, 1.25, 1.75);
 }
 
 /* Single property */
 html {
-	@include fluid-type(font-size, 400px, 1600px, 16px, 20px);
+	@include fluid-type(font-size);
 }
 
 /* Multiple properties with same values */

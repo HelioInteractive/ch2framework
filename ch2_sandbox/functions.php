@@ -36,10 +36,17 @@ if ( ! function_exists( 'ch2_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		/*
+	 * add custom largest image size to prevent giant images form being used in their original 'full' size in template parts
+	 */
+
+		add_image_size('larger',2400, 800, false);
+		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
+
+
 		add_theme_support( 'post-thumbnails' );
 
 		// Register nav menus
@@ -150,6 +157,30 @@ function ch2_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'ch2_scripts' );
+
+
+// Enqueue Font Awesome.
+	add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+	function custom_load_font_awesome() {
+		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.9/js/all.js', array(), null );
+	}
+
+	add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+	/**
+	 * Filter the HTML script tag of `font-awesome` script to add `defer` attribute.
+	 *
+	 * @param string $tag    The <script> tag for the enqueued script.
+	 * @param string $handle The script's registered handle.
+	 *
+	 * @return   Filtered HTML script tag.
+	 */
+	function add_defer_attribute( $tag, $handle ) {
+		if ( 'font-awesome' === $handle ) {
+			$tag = str_replace( ' src', ' defer src', $tag );
+		}
+
+		return $tag;
+	}
 
 function google_fonts() {
 	$query_args = array(

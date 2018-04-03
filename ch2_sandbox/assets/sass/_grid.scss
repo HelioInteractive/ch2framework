@@ -18,43 +18,19 @@
 //change gutter size if needed
 //any Unit will do
 $gutter: 1.5rem;
+$halfgutter: $gutter*.5;
 $bp_phone: 768px;
 $bp_tablet: 992px;
 $bp_desktop: 1200px;
 
-$width-scale: .975;
+
 
 .container {
+	width: 100%;
+	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: $gutter*.5;
-	padding-right: $gutter*.5;
-}
-
-@media (min-width: $bp_phone) {
-	.container {
-		width: $bp_phone*.9765625;
-	}
-}
-
-@media (min-width: $bp_tablet) {
-	.container {
-		width: $bp_tablet*.977822581;
-	}
-}
-
-@media (min-width: $bp_desktop) {
-	.container {
-
-		width: $bp_desktop*.975;
-	}
-}
-
-.container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: $gutter*.5;
-	padding-right: $gutter*.5;
+	padding: 0 calc((#{$gutter} - 12px) + 3vw);
 }
 
 .row {

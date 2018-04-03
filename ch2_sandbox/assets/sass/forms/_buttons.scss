@@ -1,23 +1,110 @@
-button,
-.button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
+//dvariables for buttons
+$default: black;
+$alt: blue;
+$tert: red;
 
-	&:hover {
-		border-color: $color__border-button-hover;
+$border-width: 2px;
+html {
+	[class*="btn"], button, .button, input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		display: inline-block;
+		font-family: $font__main;
+		font-size: .85rem;
+		font-weight: bold;
+		margin: .5rem;
+		padding: .6em .9em;
+		color: $color__white;
+		/* Button reset */
+		text-shadow: none;
+		text-transform: uppercase;
+		transition: all .5s ease;
+		&:hover {
+			text-decoration: none;
+			color: $color__white;
+		}
 	}
 
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
+
+
+	[class*="btn-default"], input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		$color: $default;
+		background-color: $color;
+		border: solid $border-width $color;
+		&:hover {
+			$color: lighten($color, 20%);
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
 	}
+
+	[class*="btn-alt"] {
+		$color: $alt;
+		background-color: $color;
+		border: solid $border-width $color;
+		color: $color__white;
+		&:hover {
+			$color: lighten($color, 20%);
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
+	}
+
+	[class*="btn-tert"] {
+
+		$color: $tert;
+		background-color: $color;
+		border: solid $border-width $color;
+		color: $color__white;
+		&:hover {
+			$color: lighten($color, 20%);
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
+	}
+
+	[class*="btn-default-o"] {
+		$color: $default;
+		background-color: transparent;
+		border: solid $border-width $default;
+		color: $default;
+		&:hover {
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
+	}
+
+	[class*="btn-alt-o"] {
+		$color: $alt;
+		background-color: transparent;
+		border: solid $border-width  $color;
+		color:  $color;
+		&:hover {
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
+	}
+
+	[class*="btn-tert-o"] {
+		$color: $tert;
+		background-color: transparent;
+		border: solid $border-width  $color;
+		color:  $color;
+		&:hover {
+			background-color: $color;
+			border: solid $border-width $color;
+			text-decoration: none;
+		}
+	}
+
 }
