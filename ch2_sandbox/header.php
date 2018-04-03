@@ -62,16 +62,3 @@
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">
-
-        <a href='puppies' class='btn-default'>blerh</a>
-        <a href='puppies' class='btn-alt'>blerh</a>
-        <a href='puppies' class='btn-tert'>blerh</a>
-        <a href='puppies' class='btn-default-o'>blerh</a>
-        <a href='puppies' class='btn-alt-o'>blerh</a>
-        <a href='puppies' class='btn-tert-o'>blerh</a>
-
-        <ul class="nav">
-            <li class="home"><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li class="about"><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-            <li class="contact"><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
-        </ul>
