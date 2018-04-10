@@ -56,6 +56,7 @@ jQuery(document).ready(function () {
         '    </div>\n' +
         '</div>\n' +
         '<div class="grid-debug-button"></div>';
+
     jQuery("body").append(jQuery(grid));
     //jQuery('body').addClass('grid-on');
     jQuery('.grid-debug-button').click(function () {

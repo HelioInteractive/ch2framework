@@ -1,6 +1,4 @@
 jQuery(document).ready(function () {
-
-    //jQuery('.js .block, .js .block *').css('opacity', '0');
     jQuery(window).bind('scroll load', (function () {
         jQuery('.js .block').each(function (i) {
             var top_of_object = jQuery(this).position().top;
