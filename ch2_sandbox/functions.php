@@ -54,6 +54,8 @@ if ( ! function_exists( 'ch2_setup' ) ) :
 			'menu-1' => esc_html__( 'Main menu', 'ch2' ),
 		) );
 		register_nav_menus( array(
+			'menu-2' => esc_html__( 'Secondary menu', 'ch2' ),
+		) );register_nav_menus( array(
 			'menu-3' => esc_html__( 'Footer', 'ch2' ),
 		) );
 

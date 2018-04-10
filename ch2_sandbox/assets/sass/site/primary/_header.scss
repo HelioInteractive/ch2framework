@@ -242,8 +242,8 @@
 			}
 		}
 	}
-	.menu-main-navigation-container {
-display: none;
+	.menu-main-navigation-container, .menu-secondary-menu-container {
+//display: none;
 		@media (min-width: $bp_phone) {
 			display: block;
 		}

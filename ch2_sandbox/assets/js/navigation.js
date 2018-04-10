@@ -104,7 +104,7 @@
         }
     }(container) );
 })();
-
+/*  really need to add a better search stuff
 jQuery('.search-toggle').click(function () {
 
     if (jQuery('.search-box').hasClass('toggled')) {
@@ -124,23 +124,7 @@ jQuery(window).click(function () {
     jQuery('.search-box').removeClass('toggled');
 });
 
-
-function navHeight() {
-    // check for the taller height between header and menu.
-    var header = jQuery('.site-header').height();
-    var menu = jQuery('.nav-menu').height();
-    var nav = 0;
-    menu = menu;
-    if (header >= menu) {
-        nav = header;
-    }
-    else {
-        nav = menu;
-    }
-
-    jQuery(".nav-wrapper-inner").height(nav - 40);
-}
-
+*/
 
 jQuery(document).ready(function () {
     jQuery("#site-navigation").click(function () {
