@@ -62,3 +62,5 @@ jQuery(document).ready(function () {
         jQuery('body').toggleClass('grid-on');
     });
 });
+
+console.log('ch-debug.js is go');

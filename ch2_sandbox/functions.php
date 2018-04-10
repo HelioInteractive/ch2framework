@@ -121,25 +121,8 @@ add_action( 'widgets_init', 'ch2_widgets_init' );
  */
 function ch2_scripts() {
 
-	//replace wp's jquery with googles always cached one
-
-	function modify_jquery() {
-		if (!is_admin()) {
-			wp_deregister_script('jquery');
-			wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', false, '1.12.4');
-			wp_enqueue_script('jquery');
-		}
-	}
-	add_action('init', 'modify_jquery');
-
 
 	wp_enqueue_style( 'ch2-style', get_stylesheet_uri() );
-
-
-	//Swap these for Live
-	//wp_enqueue_style( 'ch2-theme-style', get_template_directory_uri() . '/assets/sass/style.css' );
-//the next two lines update the stylesheet version with the time of day, forcing the browser to fetch it fresh.
-	//$cache_bust = '?' . filemtime( get_stylesheet_directory() . '/assets/sass/style.css' );
 
 
 	if (devTime()) :
@@ -151,9 +134,15 @@ function ch2_scripts() {
 
 	endif;
 
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/sass/slick.css' );
+
+	wp_enqueue_style( 'slick-css-theme', get_template_directory_uri() . '/assets/sass/slick-theme.css' );
+
 	//wp_enqueue_script( 'ch2-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170303', true );
 
-	//wp_enqueue_script( 'fade-in-blocks', get_template_directory_uri() . '/assets/js/ch2-fancy-min.js', array( 'jquery' ), '1', false );
+	//wp_enqueue_script( 'ch2-fancy', get_template_directory_uri() . '/assets/js/min/ch2-fancy.min.js', array( 'jquery' ), '1', false );
+
+	wp_enqueue_script( 'ch2-fancy', get_template_directory_uri() . '/assets/js/min/ch2-fancy.min.js', array( 'jquery' ), '1', false );
 
 	//wp_enqueue_script( 'ch2-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20170303', true );
 
@@ -161,7 +150,7 @@ function ch2_scripts() {
 	wp_enqueue_script( 'footer-scripts', get_template_directory_uri() . '/assets/js/min/footer.min.js', array(), '20170303', true );
 
 
-	wp_enqueue_script( 'ch2-addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6509ecf9b20d4d', array(), '20170303', true );
+	//wp_enqueue_script( 'ch2-addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6509ecf9b20d4d', array(), '20170303', false );
 
 
 
@@ -170,7 +159,11 @@ function ch2_scripts() {
 	}
 
 	if (devTime()) :
-		wp_enqueue_script( 'debug-grid', get_template_directory_uri() . '/assets/js/ch2-debug-min.js', array( 'jquery' ), '',true );
+		//wp_enqueue_script( 'debug-grid', get_template_directory_uri() . '/assets/js/ch2-debug-min.js', array( 'jquery' ), '',true );
+
+		wp_enqueue_script( 'debug-grid', get_template_directory_uri() . '/assets/js/ch2-debug-min.js', array( '' ), '',true );
+
+
 	endif;
 
 }
@@ -185,6 +178,7 @@ add_action( 'wp_enqueue_scripts', 'ch2_scripts' );
 	}
 
 	add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+
 	/**
 	 * Filter the HTML script tag of `font-awesome` script to add `defer` attribute.
 	 *

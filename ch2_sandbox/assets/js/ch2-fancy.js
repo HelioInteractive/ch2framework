@@ -1,5 +1,8 @@
-document.body.classList.add('js');
 jQuery(document).ready(function () {
+    jQuery('.js .block').each(function (i) {
+        jQuery(this).animate({'opacity': '0'}, 0);
+    });
+
     //jQuery('.js .block, .js .block *').css('opacity', '0');
     jQuery(window).bind('scroll load', (function () {
         jQuery('.js .block').each(function (i) {
@@ -10,8 +13,6 @@ jQuery(document).ready(function () {
             }
         });
     }));
-
-
 
     //smooth scroll
     jQuery('a[href*="#"]')
@@ -55,3 +56,4 @@ jQuery(document).ready(function () {
 
 
 // Select all links with hashes
+console.log('ch2-fancy.js is go');
