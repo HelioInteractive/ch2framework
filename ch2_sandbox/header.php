@@ -29,7 +29,7 @@
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ch2_sandbox' ); ?></a>
 
-    <header id="masthead" class="site-header" role="banner">
+    <header id="masthead" class="site-header headroom" role="banner">
         <div class="outer-block-wrapper">
             <div class="inner-block-wrapper">
                 <div class="site-branding">
