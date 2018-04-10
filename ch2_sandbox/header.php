@@ -21,7 +21,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<script>
+    document.body.classList.add('js');
+</script>
 <div id="page" class="site">
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ch2_sandbox' ); ?></a>
