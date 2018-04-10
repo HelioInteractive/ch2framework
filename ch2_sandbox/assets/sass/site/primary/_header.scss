@@ -243,11 +243,14 @@
 		}
 	}
 	.menu-main-navigation-container {
-
+display: none;
+		@media (min-width: $bp_phone) {
+			display: block;
+		}
 		.menu > li {
 			position: relative;
 		}
-		@media (min-width: 600px) {
+		@media (min-width: $bp_phone) {
 			.menu {
 				display: flex;
 				justify-content: flex-end;

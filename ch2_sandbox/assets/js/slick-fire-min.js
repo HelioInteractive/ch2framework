@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){jQuery(".slider-wrapper").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1})});

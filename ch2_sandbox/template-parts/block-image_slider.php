@@ -4,9 +4,9 @@
  */
 
 
-wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/assets/js/slick-min.js', array( jquery ), '1.8', false );
+//wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/assets/js/slick-min.js', array( jquery ), '1.8', false );
 
-wp_enqueue_script( 'slick-fire', get_template_directory_uri() . '/assets/js/slick-fire-min.js', array( jquery ), '1', true );
+//wp_enqueue_script( 'slick-fire', get_template_directory_uri() . '/assets/js/slick-fire-min.js', array( jquery ), '1', true );
 
 wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/sass/slick.css' );
 

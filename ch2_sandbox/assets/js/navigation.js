@@ -123,3 +123,46 @@ jQuery('.search-box').click(function (e) {
 jQuery(window).click(function () {
     jQuery('.search-box').removeClass('toggled');
 });
+
+
+function navHeight() {
+    // check for the taller height between header and menu.
+    var header = jQuery('.site-header').height();
+    var menu = jQuery('.nav-menu').height();
+    var nav = 0;
+    menu = menu;
+    if (header >= menu) {
+        nav = header;
+    }
+    else {
+        nav = menu;
+    }
+
+    jQuery(".nav-wrapper-inner").height(nav - 40);
+}
+
+
+jQuery(document).ready(function () {
+    jQuery("#site-navigation").click(function () {
+        //      navHeight();
+    });
+    // navHeight();
+    jQuery(window).resize(function () {
+        //    navHeight();
+    });
+
+    jQuery('#primary-menu .menu-item-has-children').on('click', function (e) {
+        if (e.target === this) {
+            //  console.log('aye');
+            if (jQuery(this).hasClass('open')) {
+                jQuery(this).removeClass('open');
+            }
+            else {
+                jQuery('#primary-menu .menu-item-has-children').removeClass('open');
+                jQuery(this).addClass('open');
+            }
+        }
+    })
+
+
+});

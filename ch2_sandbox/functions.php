@@ -120,6 +120,19 @@ add_action( 'widgets_init', 'ch2_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ch2_scripts() {
+
+	//replace wp's jquery with googles always cached one
+
+	function modify_jquery() {
+		if (!is_admin()) {
+			wp_deregister_script('jquery');
+			wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', false, '1.12.4');
+			wp_enqueue_script('jquery');
+		}
+	}
+	add_action('init', 'modify_jquery');
+
+
 	wp_enqueue_style( 'ch2-style', get_stylesheet_uri() );
 
 
@@ -138,14 +151,19 @@ function ch2_scripts() {
 
 	endif;
 
-	wp_enqueue_script( 'ch2-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170303', true );
+	//wp_enqueue_script( 'ch2-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20170303', true );
 
-	wp_enqueue_script( 'fade-in-blocks', get_template_directory_uri() . '/assets/js/ch2-fancy-min.js', array( 'jquery' ), '1', false );
+	//wp_enqueue_script( 'fade-in-blocks', get_template_directory_uri() . '/assets/js/ch2-fancy-min.js', array( 'jquery' ), '1', false );
 
-	wp_enqueue_script( 'ch2-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20170303', true );
+	//wp_enqueue_script( 'ch2-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20170303', true );
+
+
+	wp_enqueue_script( 'footer-scripts', get_template_directory_uri() . '/assets/js/min/footer.min.js', array(), '20170303', true );
 
 	wp_enqueue_script( 'ch2-addthis', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6509ecf9b20d4d', array(), '20170303', true );
-	
+
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -159,10 +177,10 @@ function ch2_scripts() {
 add_action( 'wp_enqueue_scripts', 'ch2_scripts' );
 
 
-// Enqueue Font Awesome.
+// Enqueue Font Awesome in footer.
 	add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
 	function custom_load_font_awesome() {
-		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.9/js/all.js', array(), null );
+		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.9/js/all.js', array(), null, true );
 	}
 
 	add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
