@@ -1,5 +1,3 @@
-document.body.classList.add('js');
-
 jQuery(document).ready(function () {
     var grid = '\n' +
         '\n' +

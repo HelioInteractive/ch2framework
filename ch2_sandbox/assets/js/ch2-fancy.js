@@ -1,6 +1,4 @@
-// @codekit-append  "jquery.matchHeight.js"
-
-
+document.body.classList.add('js');
 jQuery(document).ready(function () {
     //jQuery('.js .block, .js .block *').css('opacity', '0');
     jQuery(window).bind('scroll load', (function () {
