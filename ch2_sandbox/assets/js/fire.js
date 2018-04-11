@@ -11,8 +11,8 @@
 
     var headroom = new Headroom(header, {
         tolerance: {
-            down : 10,
-            up : 20
+            down : 5,
+            up : 5
         },
         offset : 205
     });

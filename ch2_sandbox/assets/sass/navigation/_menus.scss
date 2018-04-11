@@ -85,6 +85,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	transform: translateX(0);
 }
 
 @media screen and (min-width: $bp_phone) {

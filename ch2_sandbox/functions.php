@@ -39,15 +39,33 @@ if ( ! function_exists( 'ch2_setup' ) ) :
 	 * add custom largest image size to prevent giant images form being used in their original 'full' size in template parts
 	 */
 
-		add_image_size('larger',2400, 800, false);
+
+		add_theme_support( 'post-thumbnails' );
+
+		add_action( 'after_setup_theme', 'aw_custom_add_image_sizes' );
+		function aw_custom_add_image_sizes() {
+			add_image_size( 'small', 300, 9999 ); // 300px wide unlimited height
+			add_image_size( 'medium-small', 600, 9999 ); // 300px wide unlimited height
+			add_image_size( 'xl', 1200, 9999 ); // 1200px wide unlimited height
+			add_image_size( 'xxl', 2000, 9999 ); // 2000px wide unlimited height
+
+
+		}
+
+		add_filter( 'image_size_names_choose', 'aw_custom_add_image_size_names' );
+		function aw_custom_add_image_size_names( $sizes ) {
+			return array_merge( $sizes, array(
+				'small' => __( 'Small' ),
+				'medium-small' => __( 'Medium Small' ),
+				'xl' => __( 'Extra Large' ),
+				'xxl' => __( '2x Extra Large' ),
+			) );
+		}
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-
-
-		add_theme_support( 'post-thumbnails' );
 
 		// Register nav menus
 		register_nav_menus( array(
@@ -85,7 +103,7 @@ add_action( 'after_setup_theme', 'ch2_sandbox_setup' );
  * @global int $content_width
  */
 function ch2_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'ch2_content_width',800 );
+	$GLOBALS['content_width'] = apply_filters( 'ch2_content_width',1024 );
 }
 
 add_action( 'after_setup_theme', 'ch2_content_width', 0 );
