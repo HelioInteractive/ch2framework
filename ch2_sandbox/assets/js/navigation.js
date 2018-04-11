@@ -76,7 +76,7 @@
     /**
      * Toggles `focus` class to allow submenu access on tablets.
      */
-    ( function (container) {
+    (function (container) {
         var touchStartFn, i,
             parentLink = container.querySelectorAll('.menu-item-has-children > a, .page_item_has_children > a');
 
@@ -102,7 +102,7 @@
                 parentLink[i].addEventListener('touchstart', touchStartFn, false);
             }
         }
-    }(container) );
+    }(container));
 })();
 /*  really need to add a better search stuff
 jQuery('.search-toggle').click(function () {
@@ -149,4 +149,36 @@ jQuery(document).ready(function () {
     })
 
 
+
+//add margin to match the header
+    jQuery(window).on('scroll resize load', function() {
+         jQuery('html body.logged-in header').css('margin-top',32);
+        var height = jQuery('header').height();
+//jQuery('html').css('margin-top', height, 'important');
+        //jQuery('html').attr('style', 'margin-top: '+height+ 'px !important');
+        // jQuery('#masthead').css('margin-top',height * -1);
+        jQuery('.site-content').css('margin-top',height);
+
+    });
+
+
 });
+
+
+(function() {
+    var header = document.querySelector("header");
+
+    if(window.location.hash) {
+        header.classList.add("headroom--unpinned");
+    }
+
+    var headroom = new Headroom(header, {
+        tolerance: {
+            down : 5,
+            up : 5
+        },
+        offset : 205
+    });
+    headroom.init();
+
+}());
