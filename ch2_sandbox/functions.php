@@ -194,7 +194,8 @@ add_action( 'wp_enqueue_scripts', 'ch2_scripts' );
 // Enqueue Font Awesome in footer.
 	add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
 	function custom_load_font_awesome() {
-		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.9/js/all.js', array(), null, true );
+		// TODO for Leo - had to comment this out to get footer social icons to show up again
+		//wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.9/js/all.js', array(), null, true );
 	}
 
 	add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
